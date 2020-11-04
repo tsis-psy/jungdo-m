@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+
+
+<!--[if IE ]><html class="ie"><![endif]-->
+<!--[if !IE]>-->
+<html>
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>정도경영 소통창구</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <!-- Link Swiper's CSS -->
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <!-- Swiper -->
+    <div class="menu" onclick="openNav()"></div>
+
+
+    <div class="swiper-container tabs" id="header-container">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide tab_01 active"><a href="javascript:void(0)" id="tab_1_lnk">고객중심의 정도경영</a></li>
+            <li class="swiper-slide tab_02"><a href="javascript:void(0)" id="tab_2_lnk">태광가족 생활방식</a></li>
+            <li class="swiper-slide tab_03"><a href="javascript:void(0)" id="tab_3_lnk">각종 제안</a></li>
+            <li class="swiper-slide tab_04"><a href="javascript:void(0);show_sub_container_board_list();"
+                    id="tab_4_lnk">게시판</a></li>
+            <li class="swiper-slide tab_05"><a href="javascript:void(0)" id="tab_5_lnk">설문</a></li>
+        </ul>
+    </div>
+
+    <div class="swiper-container-2" id="main-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+                <h1>고객중심의 정도경영</h1>
+
+                <p class="subtit"><b>'고객중심의 정도경영'</b>은 모든 활동을<br>고객의 관점에서 수행하고 인간존중문화를<br>구현하며 법과 원칙을 준수하기 위한<br>태광가족의
+                    생활방식입니다.</p>
+
+
+                <div class="con_01">
+                    <div class="thum"><img src="img/img-con-1-1.png"></div>
+                    <div class="thum_txt">
+                        <ul>
+                            <li><b>인간존중 문화 구현</b></li>
+                            <li>인간에 대한 존중과 배려</li>
+                            <li>기본적인 인본사항 준수</li>
+                            <li>대화를 통한 최선책 모색</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="con_02">
+                    <div class="thum"><img src="img/img-con-1-2.png"></div>
+                    <div class="thum_txt">
+                        <ul>
+                            <li><b>법과 원칙 준수</b></li>
+                            <li>평등한 기회 부여</li>
+                            <li>공정한 업무처리</li>
+                            <li>정정당당한 경쟁 추구</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bottit">태광그룹은 모든 의사결정과 행동에 있어 <span class="txt_c">고객중심의 정도경영을 <br>최우선 가치로 지향</span>합니다.
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+
+                <h1>태광가족 생활방식</h1>
+
+                <p class="subtit">태광가족은 깨끗하고 올바른 윤리의식을 고취하기 위하여 아래의 생활방식을 준수합니다.</p>
+
+                <ul class="con_life">
+                    <li class="bg_grey"><span class="txt_c">하나,</span><br>고객중심과<br>인간존중<br>
+                        <img src="img/con-2-1.png"></li>
+                    <li class="bg_lgrey"><span class="txt_c">둘,</span><br>정직한 직무수행과<br>품격유지<br> <img
+                            src="img/con-2-2.png"></li>
+                    <li class="bg_lgrey"><span class="txt_c">셋,</span><br>고객만족의<br>업무처리<br> <img src="img/con-2-3.png">
+                    </li>
+                    <li class="bg_grey"><span class="txt_c">넷,</span><br>상호존중과<br>배려<br> <img src="img/con-2-4.png">
+                    </li>
+                    <li class="bg_grey"><span class="txt_c">다섯,</span><br>투자가치<br>증대 <br><img src="img/con-2-5.png">
+                    </li>
+                    <li class="bg_lgrey"><span class="txt_c">여섯,</span><br>공정한 거래와<br>동반성장<br> <img
+                            src="img/con-2-6.png"></li>
+                    <li class="bg_lgrey"><span class="txt_c">일곱,</span><br>정정당당한<br>시장경쟁<br> <img src="img/con-2-7.png">
+                    </li>
+                    <li class="bg_grey"><span class="txt_c">여덟,</span><br>사회적<br>책임완수<br> <img src="img/con-2-8.png">
+                    </li>
+                </ul>
+
+                <div class="wrap_button">
+                    <a href="javascript:openPdf('files/jungdo1.pdf');"><button>태광가족 윤리규범 전문보기</button></a>
+                    <a href="javascript:openPdf('files/jungdo2.pdf');"><button>태광가족 생활방식 전문보기</button></a>
+                    <a href="javascript:openPdf('files/jungdo4.pdf');"><button>태광가족 생활방식 사례집</button></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+
+                <h1>각종 제안</h1>
+
+                <p class="subtit">고객중심의 정도경영 관련 아이디어, 운영상 개선사항 및 건의사항을 접수하고 있습니다.</p>
+                <a href="javascript:show_sub_container(0);"><button class="big1"><img src="img/con-3-1.png"><br>
+                        <div class="btn_tit">정도경영위원회 제안</div><br>
+                        <p>우수한 제안 내용은 지원팀에서 검토한 후,<br>
+                            위원회의 논의를 거쳐<br>
+                            <span>그룹차원의 정도경영 관련 정책에 반영</span>됩니다.</p>
+                    </button></a>
+                <a href="javascript:show_sub_container(1);"><button class="big2"><img src="img/con-3-2.png"><br>
+                        <div class="btn_tit">계열사 담당조직 제안</div><br>
+
+                        <p>우수한 제안 내용은 담당조직에서 검토한 후,<br>
+                            <span>회사의 정도경영 관련 정책에 반영</span>됩니다.</p>
+                    </button></a>
+
+            </div>
+            <div class="swiper-slide">
+
+                <div class="board_header">
+                    <div class="g_srch">
+                        <input type="search" id="search" data-type="">
+                        <span id="sort"><a href="#" id="eo1999" class="sort_new" data-togle="0">최신순</a><a href="#"
+                                id="eo2000" class="sort_view" data-togle="0">조회순</a></span>
+                    </div>
+                    <input id="stype" class="hidden" value=""></input>
+                    <input id="stype2" class="hidden" value=""></input>
+                    <select class="board_select">
+                        <option value="">전체글 보기</option>
+
+                        <option data-type="1" value="41">제안 접수 현황</option>
+
+                        <option data-type="1" value="42">이벤트</option>
+
+                        <option data-type="1" value="43">우수 사례</option>
+
+                        <option data-type="2" value="44">홍보 포스터</option>
+
+                        <option data-type="1" value="45">위원회 활동</option>
+
+                    </select>
+
+                </div>
+                <div class="txt_list" id="nlist">
+
+
+                </div>
+                <div class="txt_list" id="blist">
+
+                    <div data-id="478" data-cate="42" class="tit">
+                        <div style="cursor:pointer"><span>[태평소 퀴즈] 4회. 모바일 태평소 (정답 발표)</span></div>
+                        <div><span class="category">이벤트</span><span class="date">2020-09-11</span><span class="view">조회
+                                19</span></div>
+                    </div>
+
+                    <div data-id="477" data-cate="42" class="tit">
+                        <div style="cursor:pointer"><span>[태평소 퀴즈] 3회. 제안자 보호 (정답 발표)</span></div>
+                        <div><span class="category">이벤트</span><span class="date">2020-09-09</span><span class="view">조회
+                                48</span></div>
+                    </div>
+
+                    <div data-id="476" data-cate="42" class="tit">
+                        <div style="cursor:pointer"><span>[태평소 퀴즈] 4회. 모바일 태평소 (안내)</span></div>
+                        <div><span class="category">이벤트</span><span class="date">2020-09-08</span><span class="view">조회
+                                228</span></div>
+                    </div>
+
+                    <div data-id="475" data-cate="42" class="tit">
+                        <div style="cursor:pointer"><span>[태평소 퀴즈] 2회. 소통 방법 (정답 발표)</span></div>
+                        <div><span class="category">이벤트</span><span class="date">2020-09-07</span><span class="view">조회
+                                121</span></div>
+                    </div>
+
+                    <div data-id="474" data-cate="42" class="tit">
+                        <div style="cursor:pointer"><span>[태평소 퀴즈] 3회. 제안자 보호 (안내)</span></div>
+                        <div><span class="category">이벤트</span><span class="date">2020-09-04</span><span class="view">조회
+                                176</span></div>
+                    </div>
+
+                    <div data-id="473" data-cate="42" class="tit">
+                        <div style="cursor:pointer"><span>[태평소 퀴즈] 1회. 접속 방법 (정답 발표)</span></div>
+                        <div><span class="category">이벤트</span><span class="date">2020-09-03</span><span class="view">조회
+                                176</span></div>
+                    </div>
+
+                    <div data-id="472" data-cate="42" class="tit">
+                        <div style="cursor:pointer"><span>[태평소 퀴즈] 2회. 소통 방법 (안내)</span></div>
+                        <div><span class="category">이벤트</span><span class="date">2020-09-03</span><span class="view">조회
+                                268</span></div>
+                    </div>
+
+                    <div data-id="471" data-cate="42" class="tit">
+                        <div style="cursor:pointer"><span>[태평소 퀴즈] 1회. 접속 방법 (안내)</span></div>
+                        <div><span class="category">이벤트</span><span class="date">2020-09-01</span><span class="view">조회
+                                533</span></div>
+                    </div>
+
+                    <div data-id="470" data-cate="42" class="tit">
+                        <div style="cursor:pointer"><span>태평소 가이드 제작 기념 퀴즈 이벤트 안내</span></div>
+                        <div><span class="category">이벤트</span><span class="date">2020-08-31</span><span class="view">조회
+                                867</span></div>
+                    </div>
+
+                    <div data-id="469" data-cate="45" class="tit">
+                        <div style="cursor:pointer"><span>온라인 영상시리즈 5회</span></div>
+                        <div><span class="category">위원회 활동</span><span class="date">2020-07-27</span><span
+                                class="view">조회 143</span></div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="swiper-slide">
+
+                <div class="board_header">
+                    <div class="g_srch">
+                        <input type="search" id="search" data-type="">
+                        <span id="sort"><a href="#" id="eo1999" class="sort_new" data-togle="0">최신순</a><a href="#"
+                                id="eo2000" class="sort_view" data-togle="0">조회순</a></span>
+                    </div>
+                    <input id="stype" class="hidden" value=""></input>
+                    <input id="stype2" class="hidden" value=""></input>
+
+                    <div class="board_tit">설문</div>
+                </div>
+
+                <div class="txt_list">
+
+                    <div class="tit">
+                        <div><span class="ic_doing">투표중</span><span>2020년 하반기 우선 집중 과제 선정</span></div>
+                        <div><span class="term">2020-09-11 ~ 2020-10-11</span><span class="view">조회
+                                19</span></div>
+                    </div>
+                    <div class="tit">
+                        <div><span class="ic_done">투표완료</span><span>2020년 하반기 우선 집중 과제 선정</span></div>
+                        <div><span class="term">2020-09-11 ~ 2020-10-11</span><span class="view">조회
+                                19</span></div>
+                    </div>
+                    <div class="tit">
+                        <div><span class="ic_done">투표완료</span><span>2020년 하반기 우선 집중 과제 선정</span></div>
+                        <div><span class="term">2020-09-11 ~ 2020-10-11</span><span class="view">조회
+                                19</span></div>
+                    </div>
+                    <div class="tit">
+                        <div><span class="ic_done">투표완료</span><span>2020년 하반기 우선 집중 과제 선정</span></div>
+                        <div><span class="term">2020-09-11 ~ 2020-10-11</span><span class="view">조회
+                                19</span></div>
+                    </div>
+                    <div class="tit">
+                        <div><span class="ic_done">투표완료</span><span>2020년 하반기 우선 집중 과제 선정</span></div>
+                        <div><span class="term">2020-09-11 ~ 2020-10-11</span><span class="view">조회
+                                19</span></div>
+                    </div>
+                    <div class="tit">
+                        <div><span class="ic_done">투표완료</span><span>2020년 하반기 우선 집중 과제 선정</span></div>
+                        <div><span class="term">2020-09-11 ~ 2020-10-11</span><span class="view">조회
+                                19</span></div>
+                    </div>
+                    <div class="tit">
+                        <div><span class="ic_done">투표완료</span><span>2020년 하반기 우선 집중 과제 선정</span></div>
+                        <div><span class="term">2020-09-11 ~ 2020-10-11</span><span class="view">조회
+                                19</span></div>
+                    </div>
+                    <div class="tit">
+                        <div><span class="ic_done">투표완료</span><span>2020년 하반기 우선 집중 과제 선정</span></div>
+                        <div><span class="term">2020-09-11 ~ 2020-10-11</span><span class="view">조회
+                                19</span></div>
+                    </div>
+                    <div class="tit">
+                        <div><span class="ic_done">투표완료</span><span>2020년 하반기 우선 집중 과제 선정</span></div>
+                        <div><span class="term">2020-09-11 ~ 2020-10-11</span><span class="view">조회
+                                19</span></div>
+                    </div>
+                    <div class="tit">
+                        <div><span class="ic_done">투표완료</span><span>2020년 하반기 우선 집중 과제 선정</span></div>
+                        <div><span class="term">2020-09-11 ~ 2020-10-11</span><span class="view">조회
+                                19</span></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content_wrapper" id="sub-container">
+
+        <form id="sboardForm" method="POST" enctype="multipart/form-data">
+            <input type="hidden" id="action" name="action" value="insertCommitteeBoard.json" />
+
+            <div class="content">
+                <h1 id="sub-title-view">정도경영위원회 제안</h1>
+
+                <div class="desc">
+                    <div class="tit_desc">
+                        <h5>제안자 보호</h5>
+                    </div>
+                    <ul>
+                        <li>제안자의 동의 없이 신분을 노출하거나 이를 암시하는 어떠한 정보도 공개하지 않습니다.</li>
+                        <li>제안, 진술, 자료제공 등으로 어떠한 불이익도 발생하지 않습니다.</li>
+                        <li>제안 이후에도 주기적으로 제안자를 모니터링하고 보호합니다.<br><span>* 대상자 : 직접 보호를 요청한 제안자, 피해 우려가 있다고 판단되는 제안자</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="namechk_wrapper">
+                    <div class="name_chk">
+                        <h3>기명/무기명 제안 선택</h3>
+                        <div>
+
+                            <label>
+                                <input type="radio" name="g_name" value="No" checked /> 무기명 제안
+                            </label>
+                            <label>
+                                <input type="radio" name="g_name" value="Yes" /> 기명 제안
+                            </label>
+                        </div>
+                    </div>
+                    <div class="txt_warning">* 처리결과의 회신을 원하시는 분께서는 ‘기명 제안’을 선택해주시기 바랍니다.</div>
+                    <div class="hidden">
+                        <div class="chk_wrapper">
+                            <div class="check">
+                                <input type="checkbox" id="agree" name="agree">
+                                <label for="agree">
+                                    <div class="chk_img">개인정보 수집 동의</div>
+                                </label>
+
+                            </div>
+                            <!--190822변경-->
+                            <input type="checkbox" class="opener" id="menu-toggle" />
+                            <label for="menu-toggle"></label>
+                            <!--//190822변경-->
+                            <div class="chk_con">
+                                <ol>
+                                    <li>개인정보 수집의 이용목적
+                                        <ul>
+                                            <li>고객중심의 정도경영 구현을 위한 아이디어 제안, 운영개선사항, 기타 건의사항 및 애로사항 접수</li>
+                                            <li>이용자가 접수한 제안 결과는 이메일 또는 전화로 회신</li>
+                                        </ul>
+                                    </li>
+                                    <li>수집하는 개인정보 항목
+                                        <ul>
+                                            <li>작성자의 선택에 따라 이름, 이메일, 전화번호 수집</li>
+                                        </ul>
+                                    </li>
+                                    <li>개인정보의 보유 및 이용기간
+                                        <ul>
+                                            <li>제안 및 문의 내용 대응을 위하여 개인정보는 접수 후
+                                                1년간 보관되며 이후 즉시 파기 처리</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <p>* 기타 개인정보 취급사항은 태광그룹 홈페이지 '개인정보 취급방침'을 참고하시기 바랍니다.</p>
+                            </div>
+                        </div>
+                        <p class="txt_warning" style="border-top:1px solid #eee">* 작성자께서는 동의를 거부하실 수 있습니다.
+                            다만, 거부 시에는 해당서비스 이용이 불가능합니다.</p>
+
+                        <div class="wrap_input">
+                            <div class="legend">작성자 정보(선택사항)</div>
+                            <div class="input_txt_group1">
+                                <input type="text" placeholder="이름" name="NAME" id="NAME" size="22" maxlength="8"
+                                    oninput="numberMaxLength(this);" />
+                                <button class="input_clear"
+                                    onclick="document.getElementById('NAME').value = ''"></button>
+                            </div>
+                            <div class="input_txt_group1">
+                                <input type="tel" placeholder="연락처" name="TEL" id="TEL" maxlength="11"
+                                    oninput="numberMaxLength(this);" />
+                                <button class="input_clear"
+                                    onclick="document.getElementById('TEL').value = ''"></button>
+                            </div>
+                            <div class="input_txt_group1">
+                                <input type="email" placeholder="이메일" name="EMAIL" id="EMAIL">
+                                <button class="input_clear"
+                                    onclick="document.getElementById('EMAIL').value = ''"></button>
+                            </div>
+                        </div>
+                        <p class="txt_warning">* 처리결과 회신을 원하는 경우에는 작성자 정보 입력이 필요합니다.</p>
+                    </div>
+                </div>
+                <div class="wrap_input">
+                    <div class="legend">제안 내용</div>
+                    <span class="txt_warning_r">*필수 입력 사항</span>
+                    <div class="txt_box">노사 합의 사항은<br>노사 간에 서로 소통하고 협의할 것을 권장합니다.</div>
+                    <select id="CP_CODE" name="CP_CODE">
+                        <option value=" " disabled selected>회사 선택*</option>
+
+                        <option value="T001">태광산업</option>
+
+                        <option value="T002">대한화섬</option>
+
+                        <option value="F001">흥국생명</option>
+
+                        <option value="F002">흥국화재</option>
+
+                        <option value="F004">흥국증권</option>
+
+                        <option value="F003">흥국자산운용</option>
+
+                        <option value="F006">예가람저축은행</option>
+
+                        <option value="F005">고려저축은행</option>
+
+                        <option value="M002">티캐스트</option>
+
+                        <option value="M007">kct</option>
+
+                        <option value="G000">티시스</option>
+
+                        <option value="G010">티알엔</option>
+
+                    </select>
+                    <select id="SUB_CODE" name="SUB_CODE">
+                        <option value=" " disabled selected>사업본부 선택*</option>
+
+                        <option value="G033">전사본부</option>
+
+                        <option value="G002">IT사업본부</option>
+
+                        <option value="G031">CS사업본부</option>
+
+                        <option value="G003">부동산사업본부</option>
+
+                        <option value="G005">건설사업본부</option>
+
+                        <option value="G001">레저사업본부 (태광CC)</option>
+
+                        <option value="G901">레저사업본부 (휘슬링락CC)</option>
+
+                        <option value="G028">식음사업본부</option>
+
+                    </select>
+                    <select id="TYPE1" name="TYPE1">
+                        <option value="" disabled selected>작성구분 선택*</option>
+
+                        <option value="TYPE1">정도경영 관련 개선제안</option>
+
+                        <option value="TYPE2">고객중심경영 관련 개선제안</option>
+
+                        <option value="TYPE3">정도경영위원회 건의사항</option>
+
+                        <option value="TYPE6">고객중심의 정도경영 실천사례</option>
+
+                        <option value="TYPE7">고객중심의 정도경영 위반사례</option>
+
+                    </select> <select id="TYPE2" name="TYPE2">
+                        <option value="" disabled selected>작성구분 선택</option>
+
+                        <option value="TYPE1">정도경영 관련 개선제안</option>
+
+                        <option value="TYPE2">고객중심경영 관련 개선제안</option>
+
+                        <option value="TYPE3">담당조직 건의사항</option>
+
+                        <option value="TYPE6">고객중심의 정도경영 실천사례</option>
+
+                    </select>
+                    <div class="input_txt_group2">
+                        <input type="text" placeholder="제목*" name="TITLE" id="TITLE" maxlength="30"
+                            oninput="numberMaxLength(this);">
+                        <button type="button" class="input_clear"
+                            onclick="document.getElementById('TITLE').value = ''"></button>
+                    </div>
+                    <textarea name="SUMMARY" id="SUMMARY"
+                        placeholder="사실 확인이 필요한 내용일 경우, 사실에 근거한 내용을 육하원칙(누가, 언제, 어디서, 무엇을, 어떻게, 왜)을 포함하여 구체적으로 작성해 주실 것을 부탁드립니다. 또한, 내용과 관련된 자료(사진, 문서등)가 있을 경우 첨부하여 주시면 사실 확인에 많은 도움이 됩니다."></textarea>
+
+                    <div class="file_input">
+                        <label><span id="fileName" class="filename">+ 파일선택</span><input type="file" name="sboardfile"
+                                id="sboardfile"> </label>
+                    </div>
+
+                </div>
+
+                <p class="txt_warning">* 파일은 최대 10MB까지 첨부 가능합니다. 복수의 파일 첨부시
+                    zip파일로 압축하여 등록해 주기시 바랍니다.</p>
+                <div class="wrap_button">
+                    <button type="submit" name="upload" id="upload">제출</button>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+    <!-- cgkang add -->
+    <div class="content_board_wrapper" id="sub-container-board-view">
+        <div class="swiper-slide">
+            <div class="article">
+                <div class="tit">
+                    <div class="category" id="b_value"></div>
+                    <div class="article_tit" id="b_title"></div>
+                    <div><span class="date" id="b_created"></span><span class="view" id="b_view">조회 </span></div>
+                </div>
+
+                <div id="b_file" class="attach">
+                    <!-- <img src="assets/main/img/ic_file.png"> -->
+                    <!-- <a id="fname" href="#"></a> -->
+                </div>
+
+                <div class="thum_img2" id="b_content"></div>
+            </div>
+            <div class="wrap_button">
+                <button onclick="goBoardList();" class="sub_btn">목록보기</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--menu-->
+    <div class="menu_wrap" id="myNav">
+        <div style="width:100vw">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="btn_close"></span></a>
+            <div class="menu_header">전체메뉴</div>
+            <div class="menu_content">
+                <ul>
+                    <li onclick="tab_lnk(1);"><a href="javascript:void(0);">고객중심의 정도경영</a></li>
+                    <li onclick="tab_lnk(2);"><a href="javascript:void(0);">태광가족 생활방식</a></li>
+                    <li onclick="tab_lnk(3);"><a href="javascript:void(0);">각종 제안</a></li>
+                    <li onclick="show_sub_container(0);" class="depth2"><a href="javascript:void(0);">정도경영위원회 제안</a>
+                    </li>
+                    <li onclick="show_sub_container(1);" class="depth2"><a href="javascript:void(0);">계열사 담당조직 제안</a>
+                    </li>
+                    <li onclick="tab_lnk(4);"><a href="javascript:void(0);">게시판</a></li>
+                    <li onclick="tab_lnk(5);"><a href="javascript:void(0);">설문</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--//menu-->
+    <!--div id="footer"> 
+		Footer 영역
+	</div-->
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/swiper-4.5.0.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/nativeCommon.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script type="text/javascript">
+        var TAB_IDX = 0;
+        var sindex = 0;
+
+        var board = {
+            page: 1,
+            listEnd: true,
+        }
+        //var page = 1;
+        //var tag = true;
+        var swiper_1 = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 2.7,
+            paginationClickable: true,
+            spaceBetween: 0,
+            freeMode: true,
+            //pagination: false,
+            initialSlide: sindex
+        });
+
+        // 상단 탭메뉴 클릭시 이벤트
+        $('.tabs > ul > li > a').on('click', function (e) {
+            init_container();
+            if ($(this).parent().hasClass('active')) {
+                return false;
+            }
+            $(this).parent().addClass('active').siblings().removeClass('active');
+            var tabIdx = $(this).parent().index();
+
+            swiper_2.slideTo(tabIdx, 300);
+            e.preventDefault();
+        });
+
+        var auto_height = false;
+        var swiper_2 = new Swiper('.swiper-container-2', {
+            on: {
+                slideChangeTransitionEnd: function () {
+                    TAB_IDX = this.activeIndex;
+                },
+            },
+            autoHeight: true,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: false,
+            loop: false,
+            initialSlide: sindex
+        });
+
+        var tabLen = $('.tabs > ul > li').length; //상단 탭 갯수
+
+        swiper_2.on('slideChange', function (arg) {
+            var idx = swiper_2.activeIndex;
+
+            reinitSwiper(swiper_2);
+
+            if (idx < 0) {
+                idx = tabLen - 1;
+            } else if (idx == tabLen) {
+                idx = 0;
+            }
+            $('.tabs > ul > li').removeClass('active').eq(idx).addClass('active');
+            if (idx < tabLen) {
+                swiper_1.slideTo(idx, 300);
+                $(window).scrollTop(0);
+            }
+        });
+
+        //게시판 이미지 화면 처리
+        /*
+        $(document).on('click', '.thum_img2 img', function(){
+        	var index = $(this).index();
+        	simpleLightbox($(this).attr('src'));
+       	});
+   		 
+		function simpleLightbox(imageUrl, bgColor, maxWidth){
+	   	    if(typeof bgColor === 'undefined'){
+	   	        bgColor = '#000';
+	   	    }
+	   	    if(typeof maxWidth === 'undefined'){
+	   	        maxWidth = '1100px';
+	   	    }
+	   	    window.open('NewFile.html?imageUrl='+imageUrl, 'simpleLightbox');
+	   	}
+		*/
+        function openNav() {
+            $("#myNav").animate({
+                width: '100%'
+            }, 350);
+            // document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            $("#myNav").animate({
+                width: '0%'
+            }, 350);
+            // document.getElementById("myNav").style.width = "0%";
+        }
+
+        function tab_lnk(idx) {
+            if (idx == 3) {
+
+            }
+            $("#tab_" + idx + "_lnk").click();
+            closeNav();
+        }
+
+        function init_container() {
+            //reinitSwiper(swiper_2);
+            if ($("#main-container").is(":hidden")) {
+                $("#main-container").show();
+            }
+
+            if ($("#sub-container").is(":visible")) {
+                $("#sub-container").hide();
+            }
+
+            //cgkang
+            if ($("#sub-container-board-view").is(":visible")) {
+                $("#sub-container-board-view").hide();
+            }
+
+            $('#sboardForm').resetForm();
+            $('#fileName').text('+ 파일선택');
+            $(window).scrollTop(0);
+
+        }
+
+        //cgkang add
+        function show_sub_container_board_view() {
+            tab_lnk(4);
+            $("#main-container").hide();
+            $("#sub-container").hide();
+            $("#sub-container-board-view").show();
+        }
+
+        //각종 제안 2뎁스 처리
+        function show_sub_container(idx) {
+            tab_lnk(3);
+            $("#main-container").hide();
+            $("#sub-container").show();
+            if (idx == 0) {
+
+                $("#sub-title-view").html("정도경영위원회 제안");
+                $('#TYPE1').show();
+                $('#TYPE2').hide();
+                $('#CP_CODE').show();
+                $('#SUB_CODE').hide();
+
+                $('.CP_CODE .tit').text("회사 선택");
+
+                var noOption = false;
+                $('#CP_CODE option').each(function () {
+                    if (this.value == '') {
+                        noOption = true;
+                        return;
+                    }
+                });
+                if (!noOption) {
+                    $('#CP_CODE').append("<option value=''>선택안함</option>");
+                }
+
+                $('#action').val('insertCommitteeBoard.json');
+            } else if (idx == 1) {
+                $("#sub-title-view").html("계열사 담당조직 제안");
+
+                $('#TYPE1').hide();
+                $('#TYPE2').show();
+                $('#CP_CODE').show();
+                $('.CP_CODE .tit').text("회사 선택*");
+
+                $('#SUB_CODE').hide();
+
+                $('.SUB_CODE .tit').text("사업본부 선택");
+
+                var noOption = false;
+                $('#SUB_CODE option').each(function () {
+                    if (this.value == '') {
+                        noOption = true;
+                        return;
+                    }
+                });
+                if (!noOption) {
+                    $('#SUB_CODE').append("<option value=''>선택안함</option>");
+                }
+
+                $('#action').val('insertCompanyBoard.json');
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+
+            init_container();
+
+            var page_info = location.search.split("?")[1];
+            if (page_info != undefined) {
+
+                var re = decodeURIComponent(page_info);
+                if (re == "v-sub") {
+                    tab_lnk(3);
+                }
+            }
+            //게시판 카테고리 변경 
+            $(".board_select").on('change', function () {
+                board.page = 1;
+                board.listEnd = true;
+
+                reinitSwiper(swiper_2);
+                $('#search').val('');
+
+                var data = {
+                    "cate_code": this.value
+                };
+                sendPost("portalJson.json", data, function (data) {
+                    if (data.result == 'SUCCESS') {
+                        if (typeof data.data_list == 'undefined') {
+                            alert('자료가 없습니다.');
+                            return;
+                        }
+                        var blist = $('#blist');
+                        var nlist = $('#nlist');
+                        blist.empty();
+                        nlist.empty();
+
+                        var ndata = data.noti_list;
+                        var bdata = data.data_list;
+
+                        if ($('.board_select').val() != '' && data.data_list[0].TYPE == 2) {
+                            if (typeof ndata != 'undefined') {
+                                buildHtmlTable2(nlist, ndata);
+                            }
+                            buildHtmlTable2(blist, bdata);
+                        } else {
+                            if (typeof ndata != 'undefined') {
+                                buildHtmlTable1(nlist, ndata);
+                            }
+                            buildHtmlTable1(blist, bdata);
+                        }
+                    } else {
+                        alert(data.result_msg);
+                        console.log(data);
+                    }
+                    if (typeof data.data_list != 'undefined') {
+                        if (data.data_list.length < 10) {
+                            board.page = 1;
+                            board.listEnd = false;
+                        }
+                    }
+                }, function (data) {
+                    alert(err);
+                });
+
+            });
+            //게시물 제목 클릭 상세 보기
+            $(document).on('click', '.tit', function () {
+                var data = {
+                    "MB_NO": $(this).data("id"),
+                    "cate_code": $(this).data("cate"),
+                    "article": 'Y'
+                };
+
+                sendPost("boardView.json", data,
+                    function (data) {
+                        clearBoard();
+                        if (data.result == 'SUCCESS') {
+                            $('#b_value').html(data.data[0].VALUE);
+                            $('#b_title').html(data.data[0].TITLE);
+                            $('#b_view').html("조회 " + data.data[0].VIEW);
+                            $('#b_created').html(data.data[0].CREATED);
+                            $('#b_content').html(data.data[0].CONTENT);
+
+                            if (data.data[0].FILENAME == undefined) {
+                                jQuery('#b_file').css("display", "none");
+                            } else {
+                                var fileList = data.fileList;
+
+                                jQuery('#b_file').css("display", "block");
+
+                                var row = "";
+
+                                for (var i = 0; i < fileList.length; i++) {
+                                    row +=
+                                        "<div><img src=assets/main/img/ic_file.png><a href=javascript:openPdf2('fileDownMBoard.do?TEMPNAME=" +
+                                        fileList[i].TEMPNAME + "')>" + fileList[i].FILENAME +
+                                        "</a></div>";
+                                }
+
+                                jQuery('#b_file').html(row);
+                                //$('#fname').attr("href","javascript:openPdf2('fileDownMBoard.do?TEMPNAME='')");
+                                //$('#fname').html(data.data[0].FILENAME);
+                            }
+
+                            show_sub_container_board_view();
+                        }
+                    },
+                    function (date) {
+                        alert(err);
+                    }
+                );
+
+            });
+
+            $(document).on('click', '.thum_img', function () {
+                var data = {
+                    "MB_NO": $(this).prev().data("id"),
+                    "cate_code": $(this).prev().data("cate"),
+                    "article": 'Y'
+                };
+
+                sendPost("boardView.json", data,
+                    function (data) {
+                        clearBoard();
+                        if (data.result == 'SUCCESS') {
+                            $('#b_value').html(data.data[0].VALUE);
+                            $('#b_title').html(data.data[0].TITLE);
+                            $('#b_view').html("조회 " + data.data[0].VIEW);
+                            $('#b_created').html(data.data[0].CREATED);
+                            $('#b_content').html(data.data[0].CONTENT);
+
+                            if (data.data[0].FILENAME == undefined) {
+                                jQuery('#b_file').css("display", "none");
+                            } else {
+                                var fileList = data.fileList;
+
+                                jQuery('#b_file').css("display", "block");
+
+                                var row = "";
+
+                                for (var i = 0; i < fileList.length; i++) {
+                                    row +=
+                                        "<div><img src=assets/main/img/ic_file.png><a href=javascript:openPdf2('fileDownMBoard.do?TEMPNAME=" +
+                                        fileList[i].TEMPNAME + "')>" + fileList[i].FILENAME +
+                                        "</a></div>";
+                                }
+
+                                jQuery('#b_file').html(row);
+                                //$('#fname').attr("href","javascript:openPdf2('fileDownMBoard.do?TEMPNAME='')");
+                                //$('#fname').html(data.data[0].FILENAME);
+                            }
+
+                            show_sub_container_board_view();
+                        }
+                    },
+                    function (date) {
+                        alert(err);
+                    }
+                );
+
+            });
+
+            $("#search").on("keyup", function () {
+                if (window.event.keyCode == 13) {
+                    board.page = 1;
+                    board.listEnd = true;
+                    var data = {
+                        "type": $('#search').data('type'),
+                        "title": $('#search').val(),
+                        "cate_code": $('.board_select').val()
+                    };
+                    sendPost("portalJson.json", data, function (data) {
+                        if (data.result == 'SUCCESS') {
+                            if (typeof data.data_list == 'undefined') {
+                                alert('자료가 없습니다.');
+                                return;
+                            }
+                            var list = $('#blist');
+                            list.empty();
+
+                            var myList = data.data_list;
+
+                            if ($('.board_select').val() != '' && data.data_list[0].TYPE == 2) {
+                                buildHtmlTable2(list, myList);
+                            } else {
+                                buildHtmlTable1(list, myList);
+                            }
+
+                        } else {
+                            alert(data.result_msg);
+                            console.log(data);
+                        }
+                        if (typeof data.data_list != 'undefined') {
+                            if (data.data_list.length < 10) {
+                                board.page = 1;
+                                board.listEnd = false;
+                            }
+                        }
+                    }, function (data) {
+                        alert(err);
+                    });
+                }
+                reinitSwiper(swiper_2);
+            });
+
+            $('#sort').find('a').on("click", function () {
+                board.page = 1;
+                board.listEnd = true;
+                reinitSwiper(swiper_2);
+
+                var sort_type = $(this).index(); // 0 : created, 1 : view
+                if (sort_type == 0) {
+                    sort_type = 'created';
+                } else {
+                    sort_type = 'view';
+                }
+
+                var togle = $(this).data("togle");
+                var data = {
+                    "sort": sort_type,
+                    "togle": togle,
+                    "title": $('#search').val(),
+                    "cate_code": $('.board_select').find("option:selected").val(),
+                    "id": $(this).attr('id')
+                };
+
+                sendPost("portalJson.json", data, function (data) {
+                    if (data.result == 'SUCCESS') {
+                        if (typeof data.data_list == 'undefined') {
+                            alert('자료가 없습니다.');
+                            return;
+                        }
+
+                        $('#'.concat(data.id)).data("togle", data.togle);
+
+                        $('#stype').val(data.sort);
+                        $('#stype2').val(data.sort2);
+
+                        var list = $('#blist');
+                        list.empty();
+                        var myList = data.data_list;
+
+                        if ($('.board_select').val() != '' && data.data_list[0].TYPE == 2) {
+                            buildHtmlTable2(list, myList);
+                        } else {
+                            buildHtmlTable1(list, myList);
+                        }
+
+                    } else {
+                        alert(data.result_msg);
+                        console.log(data);
+                    }
+                }, function (data) {
+                    alert(err);
+                });
+
+            }).css("cursor", "pointer");
+
+
+
+            $(window).scroll(function () {
+                if (TAB_IDX != 3 || $("#sub-container-board-view").is(":visible")) {
+                    return false;
+                }
+                //if ($(window).scrollTop() == $(document).height() - $(window).height() && tag) {
+                if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && board
+                    .listEnd) {
+                    reinitSwiper(swiper_2);
+                    ++board.page;
+                    //alert("page=" + page + "$(document).height()="+$(document).height()+"$(window).height()="+ $(window).height());
+                    var data = {
+                        "sort": $('#stype').val(),
+                        "sort2": $('#stype2').val(),
+                        "curPage": board.page,
+                        "title": $('#search').val(),
+                        "cate_code": $('.board_select').val()
+                    };
+                    setTimeout(sendPost, 500);
+                    sendPost("portalJson.json", data, function (data) {
+                        if (data.result == 'SUCCESS') {
+                            var list = $('#blist');
+                            var myList = data.data_list;
+                            if (typeof myList != 'undefined') {
+                                if ($('.board_select').val() != '' && data.data_list[0].TYPE ==
+                                    2) {
+                                    buildHtmlTable2(list, myList);
+                                } else {
+                                    buildHtmlTable1(list, myList);
+                                }
+                            }
+                        } else {
+                            alert(data.result_msg);
+                            console.log(data);
+                        }
+                        if (typeof data.data_list != 'undefined') {
+                            if (data.data_list.length < 10) {
+                                board.page = 1;
+                                board.listEnd = false;
+                            }
+                        }
+                    }, function (data) {
+                        alert(err);
+                    });
+
+                }
+            });
+
+
+            $('#sboardForm').ajaxForm({
+                beforeSubmit: function (data, form, option) {
+                    var action = $('#action').val();
+
+                    var authchk = $('[name="g_name"]:checked');
+
+                    if (authchk.val() == 'Yes') {
+                        if ($("input:checkbox[id='agree']").is(":checked") == false) {
+                            alert('개인정보 수집 동의가 필요합니다.');
+                            return false;
+                        }
+                        if ($("input:text[id='NAME']").val() == '') {
+                            alert('기명 접수인경우 이름 입력이 필요합니다.');
+                            return false;
+                        }
+
+                        if ($('#TEL').val() == '' && $('#EMAIL').val() == '') {
+                            alert('기명 접수인경우 연락처 입력이 필요합니다.');
+                            return false;
+                        }
+
+                    }
+
+                    if (action.indexOf("insertCommitteeBoard") >= 0) {
+                        if ($("#TYPE1").val() == null || $("#TYPE1").val() == "") {
+                            alert("작성구분을 선택해주세요");
+                            return false;
+                        }
+                        if ($("#CP_CODE").val() == null || $("#CP_CODE").val() == " ") {
+                            alert("회사를 선택 또는 선택안함을 지정 해주세요");
+                            return false;
+                        }
+                    }
+
+                    if (action.indexOf("insertCompanyBoard") >= 0) {
+                        if ($("#CP_CODE").val() == null || $("#CP_CODE").val() == " ") {
+                            alert("회사를 선택해주세요");
+                            return false;
+                        }
+
+                        if ($("#TYPE2").val() == null || $("#TYPE2").val() == "") {
+                            alert("작성구분을 선택해주세요");
+                            return false;
+                        }
+
+                        if ($("#CP_CODE").val() == 'G000' && $("#SUB_CODE").val() == null) {
+                            alert("사업 본부를 선택 또는 선택안함을 지정 해주세요");
+                            return false;
+                        }
+                    }
+
+                    if ($("#TITLE").val() == "") {
+                        alert("제목을 입력해주세요");
+                        return false;
+                    }
+
+                    if ($("#SUMMARY").val() == "") {
+                        alert("내용을 입력해주세요");
+                        return false;
+                    }
+
+
+                    data.push({
+                        name: 'REGISTER_KEY',
+                        value: REGISTER_KEY
+                    });
+                    data.push({
+                        name: 'OS_TYPE',
+                        value: OS_TYPE
+                    });
+
+
+
+                    option["url"] = action;
+
+                    if (confirm("등록된 내용으로 접수하시겠습니까?")) {
+                        $('#upload').attr('disabled', true);
+                        return true;
+                    }
+
+                    return false;
+
+                },
+                success: function (data, status) {
+                    data = JSON.parse(data);
+                    if (data.result == 'SUCCESS') {
+                        alert('정상적으로 접수되었습니다.');
+
+                        $('#sboardForm').resetForm();
+                        $('#fileName').text('+ 파일선택');
+                        tab_lnk(3);
+                    } else {
+                        alert(data.result_msg);
+                    }
+                    $('#upload').attr('disabled', false);
+                },
+                error: function () {
+                    $('#upload').attr('disabled', false);
+                }
+
+            });
+
+            native.getPushKey("apinitInfo('REGISTER_KEY')");
+
+        });
+
+        $('#CP_CODE').on('change', function () {
+            var action = $('#action').val();
+            if (action.indexOf("insertCompanyBoard") >= 0) {
+                if ($("#CP_CODE").val() == 'G000') {
+                    $('#SUB_CODE').show();
+                } else {
+                    $('#SUB_CODE').hide();
+                    $('#SUB_CODE').val(" ");
+                }
+            }
+        });
+
+
+        $('#sboardfile').on('change', function () {
+            if (this.files[0] == undefined) {
+                $('#fileName').text('+ 파일선택');
+                return;
+            }
+
+            var ext = $(this).val().split(".").pop().toLowerCase();
+            if (ext != "zip") {
+                //        		alert("첨부파일은 zip파일만 등록가능합니다.");
+                //        		$(this).val("");
+                //        		return;
+            }
+
+            var size = this.files[0].size;
+            if (size > 1024 * 1024 * 10) {
+                alert("첨부파일은 최대 10MB까지 첨부 가능합니다.");
+                $(this).val("");
+                return;
+            }
+
+            $('#fileName').text(this.files[0].name);
+        });
+
+
+        function apinitInfo(str) {
+            //alert("REGISTER_KEY: " + str);
+            REGISTER_KEY = str;
+        }
+
+        function numberMaxLength(e) {
+            if (e.value.length > e.maxLength) {
+                e.value = e.value.slice(0, e.maxLength);
+            }
+        }
+
+
+        function openPdf(path) {
+
+            try {
+                var nFlag = getNativeFlag();
+
+                var domain = "http://jungdo.taekwanggroup.co.kr/";
+                var url = "http://drive.google.com/viewerng/viewer?embedded=true&url=";
+
+                if (nFlag == NATIVE_NONE && getWebAndFlag2()) {
+                    window.open(url + domain + path, '_blank', 'fullscreen=yes');
+                } else if (nFlag == NATIVE_IOS) {
+                    //        			webkit.messageHandlers.callbackHandler.postMessage("getPdf", path);
+                    webkit.messageHandlers.callbackHandler.postMessage({
+                        message: "getPdf",
+                        url: path
+                    });
+
+                } else {
+                    window.open(path, '_blank', 'fullscreen=yes');
+                }
+            } catch (error) {
+                alert(error);
+            }
+
+        }
+
+
+        function openPdf2(path) {
+
+            try {
+                var nFlag = getNativeFlag();
+
+                var domain = "http://jungdo.taekwanggroup.co.kr/";
+                var url = "http://drive.google.com/viewerng/viewer?embedded=true&url=";
+
+                if (nFlag == NATIVE_NONE && getWebAndFlag2()) {
+                    window.open(path, '_blank', 'fullscreen=yes');
+
+                    //webkit.messageHandlers.callbackHandler.postMessage({message : "getPdf", url : path});
+                } else if (nFlag == NATIVE_IOS) {
+                    //			webkit.messageHandlers.callbackHandler.postMessage("getPdf", path);
+                    webkit.messageHandlers.callbackHandler.postMessage({
+                        message: "getPdf",
+                        url: path
+                    });
+
+                } else {
+                    window.open(path, '_blank', 'fullscreen=yes');
+                }
+            } catch (error) {
+                alert(error);
+            }
+
+        }
+
+
+
+        function getWebAndFlag2() {
+
+            if (userAgent.toLowerCase().indexOf("android") > -1) {
+                return true;
+            }
+            return false;
+        }
+
+
+        function movePage(data, url) {
+            $("body").append("<form id='moveForm' action='" + url + "' method='post'></form>");
+
+            for (i in data) {
+                var key = i;
+                var val = data[i];
+                $("#moveForm").append("<input type='hidden' name='" + key + "' value='" + val + "'/>");
+            }
+
+            $("#moveForm").submit();
+
+        }
+
+        function sendPost(url, data, successCallback, failCallback) {
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: data,
+                contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                success: function (data) {
+                    if (typeof successCallback == "function") {
+                        data = JSON.parse(data);
+                        if (data.result == 'EXPIRED') {
+                            alert("세션이 만료되었습니다.\n로그인 페이지로 이동합니다.");
+                            window.location.href = "loginManager.tk";
+                        } else {
+                            successCallback(data);
+                        }
+                    } else {
+                        console.log("SUCCESS RETURN DATA : ", data);
+                    }
+                },
+                error: function (data) {
+                    if (typeof successCallback == "function") {
+                        failCallback(data);
+                    } else {
+                        console.log("error RETURN DATA : ", data);
+                    }
+                }
+            });
+        }
+
+        //cgkang add
+        function clearBoard() {
+            $('#b_value').html('');
+            $('#b_title').html('');
+            $('#b_view').html('');
+            $('#b_created').html('');
+            $('#b_content').html('');
+            $('b_file').html('');
+        }
+
+        function goBoardList() {
+            KeyClick(-1);
+            //tab_lnk(4);
+            clearBoard();
+        }
+
+        function buildHtmlTable1(selector, myList) {
+            reinitSwiper(swiper_2);
+            var columns = ['VALUE', 'TITLE', 'CREATED', 'VIEW'];
+            for (var i = 0; i < myList.length; i++) {
+                var row$ = $("<div data-id=" + myList[i].MB_NO + " data-cate=" + myList[i].CATE_CODE +
+                    " class='tit'/>");
+                var subrow1$ = $("<div style='cursor:pointer' />");
+                var subrow2$ = $("<div/>");
+
+                row$.append(subrow1$);
+                row$.append(subrow2$);
+
+                for (var colIndex = 0; colIndex < columns.length; colIndex++) {
+                    var cellValue = myList[i][columns[colIndex]];
+                    if (cellValue == null) {
+                        cellValue = "";
+                    }
+                    if (columns[colIndex] == 'VALUE') {
+                        subrow2$.append($("<span class='category' />").html(cellValue));
+                    } else if (columns[colIndex] == 'TITLE') {
+                        if (myList[i].NOTICE == 'Y') {
+                            subrow1$.append($("<span class='ic_notice' />").html('공지'));
+                        }
+                        subrow1$.append($("<a href='#'/>").html(cellValue));
+                    } else if (columns[colIndex] == 'CREATED') {
+                        subrow2$.append($("<span class='date'/>").html(cellValue.substring(0, 10)));
+                    } else if (columns[colIndex] == 'VIEW') {
+                        subrow2$.append($("<span class='view'/>").html("조회 " + cellValue));
+                    }
+                }
+
+                $(selector).eq(0).append(row$);
+            }
+            swiper_2.updateSlides();
+        }
+
+        function buildHtmlTable2(selector, myList) {
+            reinitSwiper(swiper_2);
+            $(selector).eq(0).attr('class', 'img_list');
+
+            var columns = ['VALUE', 'TITLE', 'CREATED', 'VIEW', 'IMGTHM'];
+            for (var i = 0; i < myList.length; i++) {
+                var row$ = $("<div data-id=" + myList[i].MB_NO + " data-cate=" + myList[i].CATE_CODE +
+                    " class='tit'/>");
+                var subrow1$ = $("<div style='cursor:pointer' />");
+                var subrow2$ = $("<div/>");
+                row$.append(subrow1$);
+                row$.append(subrow2$);
+
+                var row2$ = $("<div class='thum_img' />");
+                var subrow22$ = $("<a href='#' />");
+                row2$.append(subrow22$);
+
+                for (var colIndex = 0; colIndex < columns.length; colIndex++) {
+                    var cellValue = myList[i][columns[colIndex]];
+                    if (cellValue == null) {
+                        cellValue = "";
+                    }
+                    if (columns[colIndex] == 'VALUE') {
+                        subrow2$.append($("<span class='category' />").html(cellValue));
+                    } else if (columns[colIndex] == 'TITLE') {
+                        if (myList[i].NOTICE == 'Y') {
+                            subrow1$.append($("<span class='ic_notice' />").html('공지'));
+                        }
+                        subrow1$.append($("<a href='#'/>").html(cellValue));
+                    } else if (columns[colIndex] == 'CREATED') {
+                        subrow2$.append($("<span class='date'/>").html(cellValue.substring(0, 10)));
+                    } else if (columns[colIndex] == 'VIEW') {
+                        subrow2$.append($("<span class='view'/>").html("조회 " + cellValue));
+                    } else if (columns[colIndex] == 'IMGTHM') {
+                        if (cellValue != '') {
+                            subrow22$.append($("<img src=" + cellValue + ">"));
+                        } else {
+                            subrow22$.append($("<img src='assets/main/img/thumnail.png' >"));
+                        }
+
+                    }
+                }
+                $(selector).eq(0).append(row$);
+                $(selector).eq(0).append(row2$);
+            }
+            swiper_2.updateSlides();
+        }
+
+        function reinitSwiper(swiper) {
+            setTimeout(function () {
+                swiper.update();
+            }, 500);
+        }
+
+        /* 200220추가 */
+        $('input[type="radio"]').change(function () {
+            $(this).closest('div.namechk_wrapper').find('div.hidden').toggle(this.value == 'Yes');
+        }).filter(':checked').change();
+
+        /* 200220추가-end */
+    </script>
+
+</body>
+
+</html>

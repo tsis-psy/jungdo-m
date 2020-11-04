@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>태광그룹 정도경영</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="inconts">
+        <div class="com_tab">
+            <ul class="tab_a">
+                <li><a href="menu_01.html">고객중심의 정도경영</a></li>
+                <li><a href="menu_02.html">태광가족 생활방식</a></li>
+                <li><a href="menu_03.html">각종 제안</a></li>
+                <li class="on"><a href="menu_04_01.html">게시판</a></li>
+                <li><a href="menu_05_01.html">설문</a></li>
+            </ul>
+            <div class="conts">
+                <div class="subtit">
+                    <h2>고객중심의 정도경영</h2>
+                    <p>'고객중심의 정도경영'은 모든 활동을 고객의 관점에서 수행하고<br>인간존중문화를 구현하며 법과 원칙을 준수하기 위한 태광가족의 생활방식입니다.</p>
+
+                </div>
+                <p class="img"><img src="img/ethics_01.png" alt="고객중심의 정도경영"></p>
+                <p class="t_box">태광그룹은 모든 의사결정과 행동에 있어<br /><span class="fcolor3">고객중심의 정도경영을 최우선 가치로 지향</span>합니다.</p>
+            </div>
+            <div class="conts">
+                <div class="subtit">
+                    <h2>태광가족 생활방식</h2>
+                    <p>태광가족은 깨끗하고 올바른 윤리의식을 고취하기 위하여 아래의 생활방식을 준수합니다.</p>
+
+                </div>
+                <p class="img"><img src="img/ethics_02.png" alt="태광가족 생활방식"></p>
+                <div class="wrap_btn">
+                    <button>태광가족 생활방식 전문보기 ></button>
+                    <button>태광가족 윤리규범 전문보기 ></button>
+                    <button>정도경영위원회 운영규정 전문보기 ></button>
+                </div>
+            </div>
+            <div class="conts">
+
+
+                <div class="com_tab_child">
+                    <ul class="tab_a_child">
+                        <li class="on tab1"><a href="#">정도경영위원회 신고 및 제안</a></li>
+
+                        <li class="tab2"><a href="#">계열사 담당조직 신고 및 제안</a></li>
+                    </ul>
+
+                    <div class="conts_child on">
+                        <p class="text_c"><span class="bold">고객중심의 정도경영 관련 아이디어, 운영상 개선사항 및 건의사항을 접수</span>하고
+                            있습니다.<br />우수한 제안 내용은 지원팀에서 검토한 후, 위원회의 논의를 거쳐<br /><span class="fcolor4">그룹차원의 정도경영 관련 정책에
+                                반영</span>됩니다.
+                        </p>
+                        <p class="text_c" style="display:none;"><span class="bold">고객중심의 정도경영 관련 아이디어, 운영상 개선사항 및 건의사항을
+                                접수</span>하고 있습니다.<br />우수한 제안 내용은 담당조직에서 검토한 후, <span class="fcolor4">회사의 정도경영 관련 정책에
+                                반영</span>됩니다.
+                        </p>
+                        <ul class="desc">
+                            <li>작성자의 개인정보 및 작성내용은 철저한 보안 속에서 처리됩니다.</li>
+                            <li>제안, 진술, 자료제공 등으로 인한 어떠한 불이익도 발생되지 않도록 하겠습니다.</li>
+                            <li>허위사실이나 음해성 글은 절대 삼가하여 주시기 바랍니다.</li>
+                        </ul>
+                        <div class="wrap_tit">
+                            <h4>개인정보 수집 동의</h4>
+
+                        </div>
+                        <div class="textarea_a">
+
+                            <ol>
+                                <li>개인정보의 수집 및 이용목적</li>
+                                <ul>
+                                    <li>고객중심의 정도경영 구현을 위한 아이디어 제안, 운영 개선사항, 기타 건의사항 및 애로사항 접수</li>
+                                    <li>이용자가 접수한 제안 결과는 이메일 또는 전화로 회신</li>
+                                </ul>
+                                <li>수집하는 개인정보 항목</li>
+                                <ul>
+                                    <li>작성자의 선택에 따라 이름, 이메일, 전화번호 수집</li>
+                                </ul>
+                                <li>개인정보의 보유 및 이용기간</li>
+                                <ul>
+                                    <li>제안 및 문의 내용 대응을 위하여 개인정보는 접수 후 1년간 보관되며 이후 즉시 파기 처리</li>
+                                </ul>
+                            </ol>
+                            <p>* 기타 개인정보 취급사항은 태광그룹 홈페이지 '개인정보 취급방침'을 참고하시기 바랍니다.</p>
+
+                        </div>
+                        <form id="board" method="POST" enctype="multipart/form-data">
+                            <input type="hidden" id="action" name="action" value='insertCommitteeBoard.json' />
+                            <div class="chk">
+                                <label><input type="checkbox" id="agree" name="agree" class="input_chk"> 개인정보 수집에
+                                    동의함</label>
+                                <span class="txt">* 작성자께서는 본 동의에 거부하실 권리가 있으나, 동의하지 않으실 경우 글 작성이 불가능합니다.</span>
+                            </div>
+                            <div class="wrap_tit">
+                                <h4>작성자 정보(선택사항)</h4>
+
+                            </div>
+                            <div class="wrap_write">
+                                <table>
+                                    <tr>
+                                        <td class="tit">이름</td>
+                                        <td class="con"><input type="text" class="form-control" name="NAME" id="NAME"
+                                                size="22"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tit">연락처</td>
+                                        <td class="con">
+                                            <select>
+                                                <option>010</option>
+                                                <option>011</option>
+                                                <option>016</option>
+                                                <option>017</option>
+                                                <option>018</option>
+                                                <option>019</option>
+                                            </select> - <input type="num" class="form-control" name="TEL" id="TEL"
+                                                size="4"> - <input type="num" class="form-control" name="TEL" id="TEL"
+                                                size="4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tit">이메일</td>
+                                        <td class="con"><input type="text" class="form-control mail" name="EMAIL"
+                                                id="EMAIL"> @ <input type="text" class="form-control mail" name="EMAIL"
+                                                id="EMAIL">
+                                            <select>
+                                                <option>직접입력</option>
+                                                <option>naver.com</option>
+                                                <option>daum.net</option>
+                                                <option>google.com</option>
+                                                <option>nate.com</option>
+
+                                            </select></td>
+                                    </tr>
+
+                                </table>
+
+
+                                <p class="txt">* 처리결과 회신을 원하실 경우에는 작성자 정보 입력이 필요합니다.</p>
+                            </div>
+                            <div class="wrap_tit">
+                                <h4>신고 및 제안 내용</h4>
+                                <span>* 필수입력 항목</span>
+                            </div>
+
+                            <div class="wrap_write">
+                                <table>
+                                    <tr class="TYPE1">
+                                        <td class="tit">구분*</td>
+                                        <td class="con"><select class="form-control" id="TYPE1" name="TYPE1">
+                                                <option value="" disabled selected>작성구분 선택</option>
+                                                <option value="TTYPE1">정도경영 관련 개선제안</option>
+
+                                                <option value="TTYPE2">고객중심 관련 개선제안</option>
+
+                                                <option value="TTYPE3">정도경영위원회 건의사항</option>
+
+                                                <option value="TTYPE4">기타 건의사항</option>
+
+
+                                            </select></td>
+                                    </tr>
+                                    <tr class="TYPE2" style="display:none;">
+                                        <td class="tit">구분*</td>
+                                        <td class="con"><select class="form-control" id="TYPE2" name="TYPE2">
+                                                <option value="" disabled selected>작성구분 선택</option>
+                                                <option value="PTYPE1">정도경영 관련 개선제안</option>
+
+                                                <option value="PTYPE2">고객중심 관련 개선제안</option>
+                                                <option value="PTYPE3">담당조직 건의사항</option>
+                                                <option value="PTYPE4">기타 건의사항</option>
+                                                <option value="test">테스트</option>
+                                            </select></td>
+                                    </tr>
+                                    <tr class="CP_CODE" style="display: none">
+                                        <td class="tit">회사선택</td>
+                                        <td class="con">
+                                            <select class="form-control" id="CP_CODE" name="CP_CODE">
+                                                <option value="" disabled selected>계열사 선택</option>
+                                                <option value="T001">태광산업(주)</option>
+                                                <option value="T002">대한화섬(주)</option>
+                                                <option value="T024">흥국생명</option>
+                                                <option value="T004">흥국화재</option>
+                                                <option value="T004">흥국증권</option>
+                                                <option value="T004">예가람저축은행</option>
+                                                <option value="T004">고려저축은행</option>
+                                                <option value="T004">티브로드</option>
+                                                <option value="T004">티캐스트</option>
+                                                <option value="T004">kct</option>
+                                                <option value="T004">티시스</option>
+                                                <option value="T004">티알엔</option>
+                                            </select></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tit">제목*</td>
+                                        <td class="con"><input type="text" class="form-control subject" name="TITLE"
+                                                id="TITLE"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tit">내용*</td>
+                                        <td class="con"><textarea class="form-control" name="SUMMARY"
+                                                id="SUMMARY"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tit">첨부</td>
+                                        <td class="con"><input type="file" class="form-control" name="file" id="file"
+                                                accept=".zip" style="display: none">
+                                            <span id="fileName" class="filename">선택된 파일없음</span>
+                                            <label for="file" class="fileBtn">파일선택</label></td>
+                                    </tr>
+                                </table>
+                                <p class="txt">* 첨부파일은 최대 10MB까지 첨부 가능합니다. 복수의 파일을 첨부할 경우 압축해서 등록해주시기 바랍니다.</p>
+                            </div>
+                            <div class="wrap_btn"><button type="submit" class="form-control" name="upload"
+                                    id="upload">접수</button></div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="conts on">
+                <div class="board_01" style="display: none;">
+                    <div class="srchbox">
+                        <input type="search">
+                        <a href="#"><img src="img/ic_srch.png"></a>
+                    </div>
+                    <div class="wrap_board">
+                        <div class="lnb_board">
+                            <ul>
+                                <li><a href="#" class="select">전체보기</a></li>
+                                <li><a href="#">위원회 소식</a></li>
+                                <li><a href="menu_04_02.html">이미지게시판</a></li>
+                                <li>정도경영 사례집</li>
+                            </ul>
+                        </div>
+                        <div class="content_board">
+                            <div class="header_board">
+                                <div class="tit">전체보기</div>
+                                <div class="sort">
+                                    <span>최신순<img src="img/ic_down.png"></span>
+                                    <span>조회순<img src="img/ic_down.png"></span>
+                                </div>
+
+                            </div>
+                            <div class="list_board">
+                                <ul>
+                                    <li>
+                                        <span class="category">위원회 소식</span>
+                                        <span class="title"><a href="menu_04_03.html" class="notice"><span
+                                                    class="notice_badge">공지</span>하반기 정도경영 가치 전파 교육 실시</a></span>
+                                        <span class="date">2020.01.06</span>
+                                        <span class="view">500</span>
+                                    </li>
+                                    <li>
+                                        <span class="category">정도경영 캠페인</span>
+                                        <span class="title"><a href="menu_04_03.html" class="notice"><span
+                                                    class="notice_badge">공지</span>(6)공정한 거래와 동반성장</a></span>
+                                        <span class="date">2020.01.06</span>
+                                        <span class="view">500</span>
+                                    </li>
+                                    <li>
+                                        <span class="category">정도경영 사례집</span>
+                                        <span class="title"><a href="menu_04_03.html">정도경영 온라인 소통창구 '태평소' 접수 및 처리
+                                                현황</a></span>
+                                        <span class="date">2020.01.06</span>
+                                        <span class="view">50000</span>
+                                    </li>
+                                    <li>
+                                        <span class="category">위원회 소식</span>
+                                        <span class="title"><a href="menu_04_03.html">하반기 정도경영 가치 전파 교육 실시</a></span>
+                                        <span class="date">2020.01.06</span>
+                                        <span class="view">50000</span>
+                                    </li>
+                                    <li>
+                                        <span class="category">위원회 소식</span>
+                                        <span class="title"><a href="menu_04_03.html">하반기 정도경영 가치 전파 교육 실시</a></span>
+                                        <span class="date">2020.01.06</span>
+                                        <span class="view">50000</span>
+                                    </li>
+                                    <li>
+                                        <span class="category">위원회 소식</span>
+                                        <span class="title"><a href="menu_04_03.html">하반기 정도경영 가치 전파 교육 실시</a></span>
+                                        <span class="date">2020.01.06</span>
+                                        <span class="view">100</span>
+                                    </li>
+                                    <li>
+                                        <span class="category">위원회 소식</span>
+                                        <span class="title"><a href="menu_04_03.html">하반기 정도경영 가치 전파 교육 실시</a></span>
+                                        <span class="date">2020.01.06</span>
+                                        <span class="view">50</span>
+                                    </li>
+                                    <li>
+                                        <span class="category">위원회 소식</span>
+                                        <span class="title"><a href="menu_04_03.html">하반기 정도경영 가치 전파 교육 실시</a></span>
+                                        <span class="date">2020.01.06</span>
+                                        <span class="view">500</span>
+                                    </li>
+                                    <li>
+                                        <span class="category">위원회 소식</span>
+                                        <span class="title"><a href="menu_04_03.html">하반기 정도경영 가치 전파 교육 실시</a></span>
+                                        <span class="date">2020.01.06</span>
+                                        <span class="view">50</span>
+                                    </li>
+                                    <li>
+                                        <span class="category">위원회 소식</span>
+                                        <span class="title"><a href="menu_04_03.html">하반기 정도경영 가치 전파 교육 실시</a></span>
+                                        <span class="date">2020.01.06</span>
+                                        <span class="view">50</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paging">
+                        <span>
+                            <a><img src="img/btn01_first.gif"></a>
+                            <a><img src="img/btn01_prev.gif"></a>
+                            <a class="now" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">9</a>
+                            <a href="#">10</a>
+                            <a><img src="img/btn01_next.gif"></a>
+                            <a><img src="img/btn01_last.gif"></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="board_02">
+                    <div class="srchbox">
+                        <input type="search">
+                        <a href="#"><img src="img/ic_srch.png"></a>
+                    </div>
+                    <div class="wrap_board">
+                        <div class="lnb_board">
+                            <ul>
+                                <li><a href="menu_04_01.html">전체보기</a></li>
+                                <li><a href="menu_04_01.html">위원회 소식</a></li>
+                                <li><a href="menu_04_02.html" class="select">이미지게시판</a></li>
+                                <li>정도경영 사례집</li>
+                            </ul>
+                        </div>
+                        <div class="content_board">
+                            <div class="header_board">
+                                <div class="tit">정도경영 캠페인</div>
+                                <div class="sort">
+                                    <span>최신순<img src="img/ic_down.png"></span>
+                                    <span>조회순<img src="img/ic_down.png"></span>
+                                </div>
+
+                            </div>
+                            <div class="img_board">
+                                <ul>
+                                    <li>
+                                        <span class="badge_img">공지</span>
+                                        <a href="menu_04_03.html"><img src="img/thumnail.png"></a>
+                                        <div class="img_tit"><a href="menu_04_03.html">정도경영 캠페인(1) 성실과 품의</a></div>
+                                        <div class="img_info"><span>2019.12.22</span> | 조회 <span>100</span></div>
+                                    </li>
+                                    <li>
+                                        <span class="badge_img">공지</span>
+                                        <a href="menu_04_03.html"><img src="img/thumnail.png"></a>
+                                        <div class="img_tit"><a href="menu_04_03.html">정도경영 캠페인(1) 성실과 품의</a></div>
+                                        <div class="img_info"><span>2019.12.22</span> | 조회 <span>100</span></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="badge_img">공지</span>
+                                        <a href="menu_04_03.html"><img src="img/thumnail.png"></a>
+                                        <div class="img_tit"><a href="menu_04_03.html">정도경영 캠페인(1) 성실과 품의</a></div>
+                                        <div class="img_info"><span>2019.12.22</span> | 조회 <span>100</span></div>
+                                    </li>
+                                    <li>
+                                        <span class="badge_img">공지</span>
+                                        <a href="menu_04_03.html"><img src="img/thumnail.png"></a>
+                                        <div class="img_tit"><a href="menu_04_03.html">정도경영 캠페인(1) 성실과 품의</a></div>
+                                        <div class="img_info"><span>2019.12.22</span> | 조회 <span>100</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="img_board">
+                                <ul>
+                                    <li>
+                                        <a href="menu_04_03.html"><img src="img/thumnail.png"></a>
+                                        <div class="img_tit"><a href="menu_04_03.html">정도경영 캠페인(1) 성실과 품의</a></div>
+                                        <div class="img_info"><span>2019.12.22</span> | 조회 <span>100</span></div>
+                                    </li>
+                                    <li>
+                                        <a href="menu_04_03.html"><img src="img/thumnail.png"></a>
+                                        <div class="img_tit"><a href="menu_04_03.html">정도경영 캠페인(1) 성실과 품의</a></div>
+                                        <div class="img_info"><span>2019.12.22</span> | 조회 <span>100</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paging">
+                        <span>
+                            <a><img src="img/btn01_first.gif"></a>
+                            <a><img src="img/btn01_prev.gif"></a>
+                            <a class="now" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">9</a>
+                            <a href="#">10</a>
+                            <a><img src="img/btn01_next.gif"></a>
+                            <a><img src="img/btn01_last.gif"></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="board_03" style="display: none;">
+                    <div class="srchbox">
+                        <input type="search">
+                        <a href="#"><img src="img/ic_srch.png"></a>
+                    </div>
+                    <div class="wrap_board">
+                        <div class="lnb_board">
+                            <ul>
+                                <li><a href="menu_04_01.html">전체보기</a></li>
+                                <li><a href="menu_04_01.html">위원회 소식</a></li>
+                                <li><a href="menu_04_02.html" class="select">이미지게시판</a></li>
+                                <li>정도경영 사례집</li>
+                            </ul>
+                        </div>
+                        <div class="content_board">
+                            <div class="header_board">
+                                <div class="article_tit">고객중심의 정도경영 정착을 위한 핵심 리더 워크숍이 진행 되었습니다.</div>
+                                <div class="article_info">
+                                    <span>2019.11.20</span> | 조회 <span>100</span>
+                                </div>
+
+                            </div>
+                            <div class="article">
+                                <img src="img/img_article.png">
+                                <div class="text">우리그룹은 11월1일과 2일 강원도 춘천시 엘리시안 강촌 리조트에서 그룹 모든 임원들과 임원직책 리더들이 참석한 '고객중심의
+                                    정도경영, 핵심가치와 리더의 역할' 이라는 주제로 워크숍을 진행했다. 행사는 정도경영위원회 임수빈 위원장 강연을 포함한 내외부 특강과 '태광가족들이
+                                    바라는 리더의 모습' 인터뷰 영상 시청, 조별 분임의 , 캠프파이어_대화의 시간 등으로 구성되었다. 특히 분임토의는 정도경영, 고객중심, 스마트 워크,
+                                    상호존중과 배려, 리더십, 솔선범 , 소통 등 7가지 핵심가치를 가지고 현재 우리의 모습과 리더의 바람직한 역할 등에 대해 핵심 리더 모두가 머리를
+                                    맞대고 열띤 토론을 진행했다. </div>
+                                <div class="attach">
+                                    <div><img src="img/ic_file.png"><span>고객중심의 정도경영, 핵심가치와 리더의 역할1.pdf</span></div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_list">
+                        <button>목록</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/progress.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.com_tab').find('.tab_a > li').on('click', function () {
+                var idx = $(this).index();
+
+                $('.com_tab').find('.tab_a > li').removeClass('on').eq(idx).addClass('on');
+                $('.com_tab').find('.conts').removeClass('on').eq(idx).addClass('on');
+            });
+
+            $('.com_tab_child').find('.tab_a_child > li').on('click', function () {
+                var idx = $(this).index();
+                console.log(idx);
+
+                $('.com_tab_child').find('.tab_a_child > li').removeClass('on').eq(idx).addClass('on');
+                // $('.com_tab_child').find('.conts_child').removeClass('on').eq(idx).addClass('on');
+
+                $('.com_tab_child').find('.conts_child > .text_c').hide();
+                $('.com_tab_child').find('.conts_child > .text_c').eq(idx).show();
+
+                if (idx == 0) {
+                    $('.TYPE1').show();
+                    $('.TYPE2').hide();
+                    $('.CP_CODE').hide();
+
+                    $('#action').val('insertCommitteeBoard.json');
+                } else if (idx == 1) {
+                    $('.TYPE1').hide();
+                    $('.TYPE2').show();
+                    $('.CP_CODE').show();
+
+                    $('#action').val('insertCompanyBoard.json');
+                }
+            });
+
+            $('#board').ajaxForm({
+                beforeSubmit: function (data, form, option) {
+                    var action = $('#action').val();
+
+                    if ($("input:checkbox[id='agree']").is(":checked") == false) {
+                        alert('개인정보 수집 동의가 필요합니다.');
+                        return false;
+                    }
+
+                    if (action.indexOf("insertCommitteeBoard") >= 0) {
+                        if ($("#TYPE1").val() == null || $("#TYPE1").val() == "") {
+                            alert("작성구분을 선택해주세요");
+                            return false;
+                        }
+                    }
+
+                    if (action.indexOf("insertCompanyBoard") >= 0) {
+                        if ($("#TYPE2").val() == null || $("#TYPE2").val() == "") {
+                            alert("작성구분을 선택해주세요");
+                            return false;
+                        }
+                        if ($("#CP_CODE").val() == null || $("#CP_CODE").val() == "") {
+                            alert("계열사를 선택해주세요");
+                            return false;
+                        }
+                    }
+
+                    if ($("#TITLE").val() == "") {
+                        alert("제목을 입력해주세요");
+                        return false;
+                    }
+
+                    if ($("#SUMMARY").val() == "") {
+                        alert("내용을 입력해주세요");
+                        return false;
+                    }
+
+                    option["url"] = action;
+
+                    if (confirm("등록된 내용으로 접수하시겠습니까?")) {
+                        return true;
+                    }
+
+                    return false;
+
+                },
+                success: function (data, status) {
+                    data = JSON.parse(data);
+                    if (data.result == 'SUCCESS') {
+                        alert('정상적으로 접수되었습니다.');
+
+                        $('#NAME').val("");
+                        $('#TEL').val("");
+                        $('#EMAIL').val("");
+                        $('#TITLE').val("");
+                        $('#SUMMARY').val("");
+                        $('#TYPE1').val("");
+                        $('#TYPE2').val("");
+                        $('#CP_CODE').val("");
+
+                        if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                            $("#file").replaceWith($("#file").clone(true));
+                        } else {
+                            $("#file").val("");
+                        }
+                        $('#fileName').text('선택된 파일없음');
+
+                        $("input:checkbox[id='agree']").prop("checked", false);
+
+
+                    } else {
+                        alert(data.result_msg);
+                        console.log(data);
+                    }
+                },
+                error: function () {}
+
+            });
+
+            $('#file').change(function () {
+
+                console.log(this.files[0]);
+                if (this.files[0] == undefined) {
+                    $('#fileName').text('선택된 파일없음');
+                    return;
+                }
+
+                console.log(this.files[0].name);
+
+                var ext = $(this).val().split(".").pop().toLowerCase();
+                console.log(ext);
+                if (ext != "zip") {
+                    alert("zip 파일만 등록가능합니다.");
+                    $(this).val("");
+                    return;
+                }
+
+                var size = this.files[0].size;
+                if (size > 1024 * 1024 * 10) {
+                    alert("10MB 이하 파일만 등록가능합니다.");
+                    $(this).val("");
+                    return;
+                }
+
+                $('#fileName').text(this.files[0].name);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
