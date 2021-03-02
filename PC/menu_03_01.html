@@ -1,404 +1,429 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <title>태광그룹 정도경영</title>
-    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div id="inconts">
-        <div class="com_tab">
-            <ul class="tab_a">
-                <li><a href="menu_01.html">고객중심의 정도경영</a></li>
-                <li><a href="menu_02.html">태광가족 생활방식</a></li>
-                <li class="on"><a href="menu_03.html">각종 제안</a></li>
-                <li><a href="menu_04_01.html">게시판</a></li>
-                <li><a href="menu_05_01.html">설문</a></li>
-            </ul>
-
-            <div class="conts on">
-                <div class="com_tab_child">
-                    <div class="subtit">
-                        <h2>정도경영위원회 제안</h2>
-                        <p class="text_c"><span class="bold">고객중심의 정도경영 관련 아이디어, 운영상 개선사항 및 건의사항을 접수</span>하고
-                            있습니다.<br />우수한 제안 내용은 지원팀에서 검토한 후, 위원회의 논의를 거쳐<br /><span class="fcolor4">그룹차원의 정도경영 관련 정책에
-                                반영</span>됩니다.
-                        </p>
-                    </div>
-
-                    <div class="conts_child on">
-                        <!-- 202008수정 -->
-                        <div class="desc">
-                            <div class="tit_desc">
-                                <h5>제안자 보호</h5>
-                            </div>
-                            <ul>
-                                <li>제안자의 동의 없이 신분을 노출하거나 이를 암시하는 어떠한 정보도 공개하지 않습니다.</li>
-                                <li>제안, 진술, 자료제공 등으로 어떠한 불이익도 발생하지 않습니다.</li>
-                                <li>제안 이후에도 주기적으로 제안자를 모니터링하고 보호합니다.<br><span>* 대상자 : 직접 보호를 요청한 제안자, 피해 우려가 있다고 판단되는
-                                        제안자</span></li>
-                            </ul>
-                        </div>
-                        <!-- end_202008수정 -->
-                        <form id="board" method="POST" enctype="multipart/form-data">
-                            <div class="wrap_tit">
-                                <h4>기명/무기명 제안 선택</h4>
-
-                            </div>
-                            <div class="q_name">
-                                <div class="name_chk">
-
-                                    <label>
-                                        <input type="radio" name="g_name" value="No" checked /> 무기명 제안
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="g_name" value="Yes" /> 기명 제안
-                                    </label>
-                                </div>
-                                <div class="txt_w100">* 처리결과의 회신을 원하시는 분께서는 ‘기명 제안’을 선택해주시기 바랍니다.</div>
-
-                                <div class="hidden">
-                                    <div class="wrap_tit">
-                                        <h4>개인정보 수집 동의</h4>
-                                    </div>
-                                    <div class="textarea_a">
-                                        <ol>
-                                            <li>개인정보의 수집 및 이용목적</li>
-                                            <ul>
-                                                <li>고객중심의 정도경영 구현을 위한 아이디어 제안, 운영 개선사항, 기타 건의사항 및 애로사항 접수</li>
-                                                <li>이용자가 접수한 제안 결과는 이메일 또는 전화로 회신</li>
-                                            </ul>
-                                            <li>수집하는 개인정보 항목</li>
-                                            <ul>
-                                                <li>작성자의 선택에 따라 이름, 이메일, 전화번호 수집</li>
-                                            </ul>
-                                            <li>개인정보의 보유 및 이용기간</li>
-                                            <ul>
-                                                <li>제안 및 문의 내용 대응을 위하여 개인정보는 접수 후 1년간 보관되며 이후 즉시 파기 처리</li>
-                                            </ul>
-                                        </ol>
-                                        <p>* 기타 개인정보 취급사항은 태광그룹 홈페이지 '개인정보 취급방침'을 참고하시기 바랍니다.</p>
-
-                                    </div>
-                                    <input type="hidden" id="action" name="action" value='insertCommitteeBoard.json' />
-                                    <div class="chk">
-                                        <label><input type="checkbox" id="agree" name="agree" class="input_chk"> 개인정보
-                                            수집에 동의함</label>
-                                        <span class="txt">* 작성자께서는 본 동의에 거부하실 권리가 있으나, 동의하지 않으실 경우 글 작성이 불가능합니다.</span>
-                                    </div>
-                                    <div class="wrap_tit">
-                                        <h4>작성자 정보</h4>
-
-                                    </div>
-                                    <div class="wrap_write">
-                                        <table>
-                                            <tr>
-                                                <td class="tit">이름</td>
-                                                <td class="con"><input type="text" class="form-control" name="NAME"
-                                                        id="NAME" size="22"></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="tit">연락처</td>
-                                                <td class="con">
-                                                    <select>
-                                                        <option>010</option>
-                                                        <option>011</option>
-                                                        <option>016</option>
-                                                        <option>017</option>
-                                                        <option>018</option>
-                                                        <option>019</option>
-                                                    </select> - <input type="num" class="form-control" name="TEL"
-                                                        id="TEL" size="4"> - <input type="num" class="form-control"
-                                                        name="TEL" id="TEL" size="4"></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="tit">이메일</td>
-                                                <td class="con"><input type="text" class="form-control mail"
-                                                        name="EMAIL" id="EMAIL"> @ <input type="text"
-                                                        class="form-control mail" name="EMAIL" id="EMAIL">
-                                                    <select>
-                                                        <option>직접입력</option>
-                                                        <option>naver.com</option>
-                                                        <option>daum.net</option>
-                                                        <option>google.com</option>
-                                                        <option>nate.com</option>
-
-                                                    </select></td>
-                                            </tr>
-
-                                        </table>
-
-
-                                        <p class="txt">* '기명제안'을 선택하신 경우 연락처와 이메일 중 반드시 한가지를 입력하셔야 합니다.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="wrap_tit">
-                                <h4>신고 및 제안 내용</h4>
-                                <span>* 필수입력 항목</span>
-                            </div>
-                            <!-- 202008추가 -->
-                            <p class="txt_sub">노사 합의 사항은 노사 간에 서로 소통하고 협의할 것을 권장합니다.</p>
-                            <!-- end_202008추가 -->
-                            <div class="wrap_write">
-                                <table>
-                                    <tr class="TYPE1">
-                                        <td class="tit">구분*</td>
-                                        <td class="con"><select class="form-control" id="TYPE1" name="TYPE1">
-                                                <option value="" disabled selected>작성구분 선택</option>
-                                                <option value="TTYPE1">정도경영 관련 개선제안</option>
-
-                                                <option value="TTYPE2">고객중심 관련 개선제안</option>
-
-                                                <option value="TTYPE3">정도경영위원회 건의사항</option>
-
-                                                <option value="TTYPE4">기타 건의사항</option>
-
-
-                                            </select></td>
-                                    </tr>
-                                    <tr class="TYPE2" style="display:none;">
-                                        <td class="tit">구분*</td>
-                                        <td class="con"><select class="form-control" id="TYPE2" name="TYPE2">
-                                                <option value="" disabled selected>작성구분 선택</option>
-                                                <option value="PTYPE1">정도경영 관련 개선제안</option>
-
-                                                <option value="PTYPE2">고객중심 관련 개선제안</option>
-                                                <option value="PTYPE3">담당조직 건의사항</option>
-                                                <option value="PTYPE4">기타 건의사항</option>
-                                                <option value="test">테스트</option>
-                                            </select></td>
-                                    </tr>
-                                    <tr class="CP_CODE">
-                                        <td class="tit">회사 선택</td>
-                                        <td class="con">
-                                            <select class="form-control" id="CP_CODE" name="CP_CODE">
-                                                <option value="" disabled selected>회사 선택</option>
-                                                <option value="T001">태광산업(주)</option>
-                                                <option value="T002">대한화섬(주)</option>
-                                                <option value="T024">흥국생명</option>
-                                                <option value="T004">흥국화재</option>
-                                                <option value="T004">흥국증권</option>
-                                                <option value="T004">예가람저축은행</option>
-                                                <option value="T004">고려저축은행</option>
-                                                <option value="T004">티브로드</option>
-                                                <option value="T004">티캐스트</option>
-                                                <option value="T004">kct</option>
-                                                <option value="T004">티시스</option>
-                                                <option value="T004">티알엔</option>
-                                            </select>
-                                            <!-- 202008추가 -->
-                                            <span class="txt_s">*사실확인 및 빠른 처리를 위하여 필요한 정보입니다.</span>
-                                            <!-- end_202008추가 -->
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tit">제목*</td>
-                                        <td class="con"><input type="text" class="form-control subject" name="TITLE"
-                                                id="TITLE"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tit">내용*</td>
-                                        <td class="con"><textarea class="form-control" name="SUMMARY" id="SUMMARY"
-                                                placeholder="사실 확인이 필요한 내용일 경우, 사실에 근거한 내용을 육하원칙(누가, 언제, &#10;어디서, 무엇을, 어떻게, 왜)을 포함하여 구체적으로 작성해 주실 것을 부탁드립니다. &#10;또한, 내용과 관련된 자료(사진, 문서 등)가 있으실 경우 첨부하여 주시면 &#10;사실 확인에 많은 도움이 됩니다."></textarea>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tit">첨부</td>
-                                        <td class="con"><input type="file" class="form-control" name="file" id="file"
-                                                accept=".zip" style="display: none">
-                                            <span id="fileName" class="filename">선택된 파일없음</span>
-                                            <label for="file" class="fileBtn">파일선택</label></td>
-                                    </tr>
-                                </table>
-                                <p class="txt">* 첨부파일은 최대 10MB까지 첨부 가능합니다. 복수의 파일을 첨부할 경우 압축해서 등록해주시기 바랍니다.</p>
-                            </div>
-                            <div class="wrap_btn"><button type="submit" class="form-control" name="upload"
-                                    id="upload">접수</button></div>
-                        </form>
-
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-        </div>
-    </div>
-
-
-
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/progress.js"></script>
-    <script src="js/jquery.placeholder.js"></script>
-
-    <script type="text/javascript">
-        $(function () {
-            $('.com_tab').find('.tab_a > li').on('click', function () {
-                var idx = $(this).index();
-
-                $('.com_tab').find('.tab_a > li').removeClass('on').eq(idx).addClass('on');
-                $('.com_tab').find('.conts').removeClass('on').eq(idx).addClass('on');
-            });
-
-            $('.com_tab_child').find('.tab_a_child > li').on('click', function () {
-                var idx = $(this).index();
-                console.log(idx);
-
-                $('.com_tab_child').find('.tab_a_child > li').removeClass('on').eq(idx).addClass('on');
-                // $('.com_tab_child').find('.conts_child').removeClass('on').eq(idx).addClass('on');
-
-                $('.com_tab_child').find('.conts_child > .text_c').hide();
-                $('.com_tab_child').find('.conts_child > .text_c').eq(idx).show();
-
-                if (idx == 0) {
-                    $('.TYPE1').show();
-                    $('.TYPE2').hide();
-                    $('.CP_CODE').hide();
-
-                    $('#action').val('insertCommitteeBoard.json');
-                } else if (idx == 1) {
-                    $('.TYPE1').hide();
-                    $('.TYPE2').show();
-                    $('.CP_CODE').show();
-
-                    $('#action').val('insertCompanyBoard.json');
-                }
-            });
-
-            //
-            $('input[type="radio"]').change(function () {
-                $(this).closest('div.q_name').find('div.hidden').toggle(this.value == 'Yes');
-            }).filter(':checked').change();
-
-            $('input, textarea').placeholder();
-            //
-
-            $('.hide-show input').change(function () {
-                $(this).closest('.hide-show').next('.hide-show-yes').toggle(this.value == 'yes').next(
-                    '.hide-show-no').toggle(this.value == 'no');
-            }).filter(':checked').change();
-
-            $('#board').ajaxForm({
-                beforeSubmit: function (data, form, option) {
-                    var action = $('#action').val();
-
-                    if ($("input:checkbox[id='agree']").is(":checked") == false) {
-                        alert('개인정보 수집 동의가 필요합니다.');
-                        return false;
-                    }
-
-                    if (action.indexOf("insertCommitteeBoard") >= 0) {
-                        if ($("#TYPE1").val() == null || $("#TYPE1").val() == "") {
-                            alert("작성구분을 선택해주세요");
-                            return false;
-                        }
-                    }
-
-                    if (action.indexOf("insertCompanyBoard") >= 0) {
-                        if ($("#TYPE2").val() == null || $("#TYPE2").val() == "") {
-                            alert("작성구분을 선택해주세요");
-                            return false;
-                        }
-                        if ($("#CP_CODE").val() == null || $("#CP_CODE").val() == "") {
-                            alert("계열사를 선택해주세요");
-                            return false;
-                        }
-                    }
-
-                    if ($("#TITLE").val() == "") {
-                        alert("제목을 입력해주세요");
-                        return false;
-                    }
-
-                    if ($("#SUMMARY").val() == "") {
-                        alert("내용을 입력해주세요");
-                        return false;
-                    }
-
-                    option["url"] = action;
-
-                    if (confirm("등록된 내용으로 접수하시겠습니까?")) {
-                        return true;
-                    }
-
-                    return false;
-
-                },
-                success: function (data, status) {
-                    data = JSON.parse(data);
-                    if (data.result == 'SUCCESS') {
-                        alert('정상적으로 접수되었습니다.');
-
-                        $('#NAME').val("");
-                        $('#TEL').val("");
-                        $('#EMAIL').val("");
-                        $('#TITLE').val("");
-                        $('#SUMMARY').val("");
-                        $('#TYPE1').val("");
-                        $('#TYPE2').val("");
-                        $('#CP_CODE').val("");
-
-                        if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
-                            $("#file").replaceWith($("#file").clone(true));
-                        } else {
-                            $("#file").val("");
-                        }
-                        $('#fileName').text('선택된 파일없음');
-
-                        $("input:checkbox[id='agree']").prop("checked", false);
-
-
-                    } else {
-                        alert(data.result_msg);
-                        console.log(data);
-                    }
-                },
-                error: function () {}
-
-            });
-
-            $('#file').change(function () {
-
-                console.log(this.files[0]);
-                if (this.files[0] == undefined) {
-                    $('#fileName').text('선택된 파일없음');
-                    return;
-                }
-
-                console.log(this.files[0].name);
-
-                var ext = $(this).val().split(".").pop().toLowerCase();
-                console.log(ext);
-                if (ext != "zip") {
-                    alert("zip 파일만 등록가능합니다.");
-                    $(this).val("");
-                    return;
-                }
-
-                var size = this.files[0].size;
-                if (size > 1024 * 1024 * 10) {
-                    alert("10MB 이하 파일만 등록가능합니다.");
-                    $(this).val("");
-                    return;
-                }
-
-                $('#fileName').text(this.files[0].name);
-            });
-        });
-    </script>
-
-</body>
-
+	<head>
+		<meta charset="UTF-8" />
+		<title>태광그룹 정도경영</title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="inconts">
+			<div class="com_tab">
+				<ul class="tab_a">
+					<li><a href="menu_01.html">고객중심의 정도경영</a></li>
+					<li><a href="menu_02.html">태광가족 생활방식</a></li>
+					<li class="on"><a href="menu_03.html">각종 제안</a></li>
+					<li><a href="menu_04_01.html">게시판</a></li>
+					<li><a href="menu_05_01.html">설문</a></li>
+					<li><a href="menu_06_01.html">토론</a></li>
+				</ul>
+
+				<div class="conts on">
+					<div class="com_tab_child">
+						<div class="subtit">
+							<h2>정도경영위원회 제안</h2>
+							<p class="text_c">
+								<span class="bold">고객중심의 정도경영 관련 아이디어, 운영상 개선사항 및 건의사항을 접수</span>하고
+								있습니다.<br />우수한 제안 내용은 지원팀에서 검토한 후, 위원회의 논의를 거쳐<br /><span class="fcolor4"
+									>그룹차원의 정도경영 관련 정책에 반영</span
+								>됩니다.
+							</p>
+						</div>
+
+						<div class="conts_child on">
+							<!-- 202008수정 -->
+							<div class="desc">
+								<div class="tit_desc">
+									<h5>제안자 보호</h5>
+								</div>
+								<ul>
+									<li>제안자의 동의 없이 신분을 노출하거나 이를 암시하는 어떠한 정보도 공개하지 않습니다.</li>
+									<li>제안, 진술, 자료제공 등으로 어떠한 불이익도 발생하지 않습니다.</li>
+									<li>
+										제안 이후에도 주기적으로 제안자를 모니터링하고 보호합니다.<br /><span
+											>* 대상자 : 직접 보호를 요청한 제안자, 피해 우려가 있다고 판단되는 제안자</span
+										>
+									</li>
+								</ul>
+							</div>
+							<!-- end_202008수정 -->
+							<form id="board" method="POST" enctype="multipart/form-data">
+								<div class="wrap_tit">
+									<h4>기명/무기명 제안 선택</h4>
+								</div>
+								<div class="q_name">
+									<div class="name_chk">
+										<label> <input type="radio" name="g_name" value="No" checked /> 무기명 제안 </label>
+										<label> <input type="radio" name="g_name" value="Yes" /> 기명 제안 </label>
+									</div>
+									<div class="txt_w100">* 처리결과의 회신을 원하시는 분께서는 ‘기명 제안’을 선택해주시기 바랍니다.</div>
+
+									<div class="hidden">
+										<div class="wrap_tit">
+											<h4>개인정보 수집 동의</h4>
+										</div>
+										<div class="textarea_a">
+											<ol>
+												<li>개인정보의 수집 및 이용목적</li>
+												<ul>
+													<li>
+														고객중심의 정도경영 구현을 위한 아이디어 제안, 운영 개선사항, 기타 건의사항 및 애로사항 접수
+													</li>
+													<li>이용자가 접수한 제안 결과는 이메일 또는 전화로 회신</li>
+												</ul>
+												<li>수집하는 개인정보 항목</li>
+												<ul>
+													<li>작성자의 선택에 따라 이름, 이메일, 전화번호 수집</li>
+												</ul>
+												<li>개인정보의 보유 및 이용기간</li>
+												<ul>
+													<li>제안 및 문의 내용 대응을 위하여 개인정보는 접수 후 1년간 보관되며 이후 즉시 파기 처리</li>
+												</ul>
+											</ol>
+											<p>* 기타 개인정보 취급사항은 태광그룹 홈페이지 '개인정보 취급방침'을 참고하시기 바랍니다.</p>
+										</div>
+										<input type="hidden" id="action" name="action" value="insertCommitteeBoard.json" />
+										<div class="chk">
+											<label
+												><input type="checkbox" id="agree" name="agree" class="input_chk" /> 개인정보 수집에
+												동의함</label
+											>
+											<span class="txt"
+												>* 작성자께서는 본 동의에 거부하실 권리가 있으나, 동의하지 않으실 경우 글 작성이
+												불가능합니다.</span
+											>
+										</div>
+										<div class="wrap_tit">
+											<h4>작성자 정보</h4>
+										</div>
+										<div class="wrap_write">
+											<table>
+												<tr>
+													<td class="tit">이름</td>
+													<td class="con">
+														<input type="text" class="form-control" name="NAME" id="NAME" size="22" />
+													</td>
+												</tr>
+												<tr>
+													<td class="tit">연락처</td>
+													<td class="con">
+														<select>
+															<option>010</option>
+															<option>011</option>
+															<option>016</option>
+															<option>017</option>
+															<option>018</option>
+															<option>019</option>
+														</select>
+														- <input type="num" class="form-control" name="TEL" id="TEL" size="4" /> -
+														<input type="num" class="form-control" name="TEL" id="TEL" size="4" />
+													</td>
+												</tr>
+												<tr>
+													<td class="tit">이메일</td>
+													<td class="con">
+														<input type="text" class="form-control mail" name="EMAIL" id="EMAIL" /> @
+														<input type="text" class="form-control mail" name="EMAIL" id="EMAIL" />
+														<select>
+															<option>직접입력</option>
+															<option>naver.com</option>
+															<option>daum.net</option>
+															<option>google.com</option>
+															<option>nate.com</option>
+														</select>
+													</td>
+												</tr>
+											</table>
+
+											<p class="txt">
+												* '기명제안'을 선택하신 경우 연락처와 이메일 중 반드시 한가지를 입력하셔야 합니다.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="wrap_tit">
+									<h4>신고 및 제안 내용</h4>
+									<span>* 필수입력 항목</span>
+								</div>
+								<!-- 202008추가 -->
+								<p class="txt_sub">노사 합의 사항은 노사 간에 서로 소통하고 협의할 것을 권장합니다.</p>
+								<!-- end_202008추가 -->
+								<div class="wrap_write">
+									<table>
+										<tr class="TYPE1">
+											<td class="tit">구분*</td>
+											<td class="con">
+												<select class="form-control" id="TYPE1" name="TYPE1">
+													<option value="" disabled selected>작성구분 선택</option>
+													<option value="TTYPE1">정도경영 관련 개선제안</option>
+
+													<option value="TTYPE2">고객중심 관련 개선제안</option>
+
+													<option value="TTYPE3">정도경영위원회 건의사항</option>
+
+													<option value="TTYPE4">기타 건의사항</option>
+												</select>
+											</td>
+										</tr>
+										<tr class="TYPE2" style="display: none">
+											<td class="tit">구분*</td>
+											<td class="con">
+												<select class="form-control" id="TYPE2" name="TYPE2">
+													<option value="" disabled selected>작성구분 선택</option>
+													<option value="PTYPE1">정도경영 관련 개선제안</option>
+
+													<option value="PTYPE2">고객중심 관련 개선제안</option>
+													<option value="PTYPE3">담당조직 건의사항</option>
+													<option value="PTYPE4">기타 건의사항</option>
+													<option value="test">테스트</option>
+												</select>
+											</td>
+										</tr>
+										<tr class="CP_CODE">
+											<td class="tit">회사 선택</td>
+											<td class="con">
+												<select class="form-control" id="CP_CODE" name="CP_CODE">
+													<option value="" disabled selected>회사 선택</option>
+													<option value="T001">태광산업(주)</option>
+													<option value="T002">대한화섬(주)</option>
+													<option value="T024">흥국생명</option>
+													<option value="T004">흥국화재</option>
+													<option value="T004">흥국증권</option>
+													<option value="T004">예가람저축은행</option>
+													<option value="T004">고려저축은행</option>
+													<option value="T004">티브로드</option>
+													<option value="T004">티캐스트</option>
+													<option value="T004">kct</option>
+													<option value="T004">티시스</option>
+													<option value="T004">티알엔</option>
+												</select>
+												<!-- 202008추가 -->
+												<span class="txt_s">*사실확인 및 빠른 처리를 위하여 필요한 정보입니다.</span>
+												<!-- end_202008추가 -->
+											</td>
+										</tr>
+										<tr>
+											<td class="tit">제목*</td>
+											<td class="con"><input type="text" class="form-control subject" name="TITLE" id="TITLE" /></td>
+										</tr>
+										<tr>
+											<td class="tit">내용*</td>
+											<td class="con">
+												<textarea
+													class="form-control"
+													name="SUMMARY"
+													id="SUMMARY"
+													placeholder="사실 확인이 필요한 내용일 경우, 사실에 근거한 내용을 육하원칙(누가, 언제, &#10;어디서, 무엇을, 어떻게, 왜)을 포함하여 구체적으로 작성해 주실 것을 부탁드립니다. &#10;또한, 내용과 관련된 자료(사진, 문서 등)가 있으실 경우 첨부하여 주시면 &#10;사실 확인에 많은 도움이 됩니다."
+												></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td class="tit">첨부</td>
+											<td class="con">
+												<input
+													type="file"
+													class="form-control"
+													name="file"
+													id="file"
+													accept=".zip"
+													style="display: none"
+												/>
+												<span id="fileName" class="filename">선택된 파일없음</span>
+												<label for="file" class="fileBtn">파일선택</label>
+											</td>
+										</tr>
+									</table>
+									<p class="txt">
+										* 첨부파일은 최대 10MB까지 첨부 가능합니다. 복수의 파일을 첨부할 경우 압축해서 등록해주시기
+										바랍니다.
+									</p>
+								</div>
+								<div class="wrap_btn">
+									<button type="submit" class="form-control" name="upload" id="upload">접수</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.form.js"></script>
+		<script src="js/progress.js"></script>
+		<script src="js/jquery.placeholder.js"></script>
+
+		<script type="text/javascript">
+			$(function () {
+				$(".com_tab")
+					.find(".tab_a > li")
+					.on("click", function () {
+						var idx = $(this).index();
+
+						$(".com_tab").find(".tab_a > li").removeClass("on").eq(idx).addClass("on");
+						$(".com_tab").find(".conts").removeClass("on").eq(idx).addClass("on");
+					});
+
+				$(".com_tab_child")
+					.find(".tab_a_child > li")
+					.on("click", function () {
+						var idx = $(this).index();
+						console.log(idx);
+
+						$(".com_tab_child").find(".tab_a_child > li").removeClass("on").eq(idx).addClass("on");
+						// $('.com_tab_child').find('.conts_child').removeClass('on').eq(idx).addClass('on');
+
+						$(".com_tab_child").find(".conts_child > .text_c").hide();
+						$(".com_tab_child").find(".conts_child > .text_c").eq(idx).show();
+
+						if (idx == 0) {
+							$(".TYPE1").show();
+							$(".TYPE2").hide();
+							$(".CP_CODE").hide();
+
+							$("#action").val("insertCommitteeBoard.json");
+						} else if (idx == 1) {
+							$(".TYPE1").hide();
+							$(".TYPE2").show();
+							$(".CP_CODE").show();
+
+							$("#action").val("insertCompanyBoard.json");
+						}
+					});
+
+				//
+				$('input[type="radio"]')
+					.change(function () {
+						$(this)
+							.closest("div.q_name")
+							.find("div.hidden")
+							.toggle(this.value == "Yes");
+					})
+					.filter(":checked")
+					.change();
+
+				$("input, textarea").placeholder();
+				//
+
+				$(".hide-show input")
+					.change(function () {
+						$(this)
+							.closest(".hide-show")
+							.next(".hide-show-yes")
+							.toggle(this.value == "yes")
+							.next(".hide-show-no")
+							.toggle(this.value == "no");
+					})
+					.filter(":checked")
+					.change();
+
+				$("#board").ajaxForm({
+					beforeSubmit: function (data, form, option) {
+						var action = $("#action").val();
+
+						if ($("input:checkbox[id='agree']").is(":checked") == false) {
+							alert("개인정보 수집 동의가 필요합니다.");
+							return false;
+						}
+
+						if (action.indexOf("insertCommitteeBoard") >= 0) {
+							if ($("#TYPE1").val() == null || $("#TYPE1").val() == "") {
+								alert("작성구분을 선택해주세요");
+								return false;
+							}
+						}
+
+						if (action.indexOf("insertCompanyBoard") >= 0) {
+							if ($("#TYPE2").val() == null || $("#TYPE2").val() == "") {
+								alert("작성구분을 선택해주세요");
+								return false;
+							}
+							if ($("#CP_CODE").val() == null || $("#CP_CODE").val() == "") {
+								alert("계열사를 선택해주세요");
+								return false;
+							}
+						}
+
+						if ($("#TITLE").val() == "") {
+							alert("제목을 입력해주세요");
+							return false;
+						}
+
+						if ($("#SUMMARY").val() == "") {
+							alert("내용을 입력해주세요");
+							return false;
+						}
+
+						option["url"] = action;
+
+						if (confirm("등록된 내용으로 접수하시겠습니까?")) {
+							return true;
+						}
+
+						return false;
+					},
+					success: function (data, status) {
+						data = JSON.parse(data);
+						if (data.result == "SUCCESS") {
+							alert("정상적으로 접수되었습니다.");
+
+							$("#NAME").val("");
+							$("#TEL").val("");
+							$("#EMAIL").val("");
+							$("#TITLE").val("");
+							$("#SUMMARY").val("");
+							$("#TYPE1").val("");
+							$("#TYPE2").val("");
+							$("#CP_CODE").val("");
+
+							if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+								$("#file").replaceWith($("#file").clone(true));
+							} else {
+								$("#file").val("");
+							}
+							$("#fileName").text("선택된 파일없음");
+
+							$("input:checkbox[id='agree']").prop("checked", false);
+						} else {
+							alert(data.result_msg);
+							console.log(data);
+						}
+					},
+					error: function () {},
+				});
+
+				$("#file").change(function () {
+					console.log(this.files[0]);
+					if (this.files[0] == undefined) {
+						$("#fileName").text("선택된 파일없음");
+						return;
+					}
+
+					console.log(this.files[0].name);
+
+					var ext = $(this).val().split(".").pop().toLowerCase();
+					console.log(ext);
+					if (ext != "zip") {
+						alert("zip 파일만 등록가능합니다.");
+						$(this).val("");
+						return;
+					}
+
+					var size = this.files[0].size;
+					if (size > 1024 * 1024 * 10) {
+						alert("10MB 이하 파일만 등록가능합니다.");
+						$(this).val("");
+						return;
+					}
+
+					$("#fileName").text(this.files[0].name);
+				});
+			});
+		</script>
+	</body>
 </html>
