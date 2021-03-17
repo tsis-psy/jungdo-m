@@ -1423,6 +1423,10 @@ select:focus {
 	padding-right: 12px;
 }
 
+.wrap_chart {
+	padding: 20px 0;
+	background-color: #f4f4f4;
+}
 /* 주요의견 */
 .wrap_tit {
 	width: 100%;

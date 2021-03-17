@@ -1627,9 +1627,17 @@
             // title: "My Daily Activities",
             colors: ['#F2994A', '#bdbdbd'],
             backgroundColor: '#f4f4f4',
-            legend: 'right',
+            legend: {position: 'bottom', textStyle: {fontSize: 13}},
             width:'100%',
-            height: 200
+            height: '100%',
+            chartArea: {
+                top:'3%',
+                height: "80%",
+                width: "80%"
+                },
+            fontSize:14,
+            
+
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
