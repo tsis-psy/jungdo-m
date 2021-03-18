@@ -1780,7 +1780,7 @@ select:focus {
 }
 .layer input {
 	width: 100%;
-	padding: 7px;
+	padding: 8px;
 	border: 1px solid #e0e0e0;
 	text-align: center;
 	display: block;
@@ -1797,6 +1797,7 @@ select:focus {
 	border: 1px solid #b4985a;
 	background-color: #fff;
 	color: #b4985a;
+	font-size: 16px;
 }
 .layer_close {
 	float: right;
