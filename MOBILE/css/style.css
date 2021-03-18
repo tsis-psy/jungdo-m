@@ -1432,11 +1432,12 @@ select:focus {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 15px 10px 15px;
+	padding: 30px 15px 10px 15px;
 	box-sizing: border-box;
 }
 .wrap_tit h4 {
 	display: inline-flex;
+	font-size: 16px;
 }
 .wrap_opinion_tab {
 	width: 100%;
