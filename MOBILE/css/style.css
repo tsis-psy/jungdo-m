@@ -1432,7 +1432,7 @@ select:focus {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	padding: 30px 15px 10px 15px;
+	padding: 40px 15px 10px 15px;
 	box-sizing: border-box;
 }
 .wrap_tit h4 {
