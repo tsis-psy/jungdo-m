@@ -1777,10 +1777,11 @@ select:focus {
 
 .layer_con p {
 	padding: 0 0 30px 0;
+	font-size: 16px;
 }
 .layer input {
 	width: 100%;
-	padding: 8px;
+	padding: 10px;
 	border: 1px solid #e0e0e0;
 	text-align: center;
 	display: block;
