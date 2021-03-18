@@ -1607,8 +1607,8 @@ select:focus {
 .btn_box {
 	border: 1px solid #e0e0e0;
 	border-top: none;
-	padding: 8px;
-	text-align: right;
+	padding: 8px 12px;
+
 	background-color: #fff;
 	display: flex;
 	justify-content: flex-end;
@@ -1687,6 +1687,7 @@ select:focus {
 	padding: 10px 8px;
 	font-size: 16px;
 	color: #333;
+	letter-spacing: -0.5px;
 }
 .boards {
 	height: 100%;
