@@ -99,8 +99,8 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: -20px;
-	padding: 0 16px 18px 16px;
+	margin-top: -25px;
+	padding: 0 16px 10px 16px;
 	box-sizing: border-box;
 }
 
@@ -1607,7 +1607,7 @@ select:focus {
 
 .srch_opinion {
 	background-color: #f4f4f4;
-	padding: 8px 0;
+	padding: 10px 0;
 }
 
 .modify_opinion {
