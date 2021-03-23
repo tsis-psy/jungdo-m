@@ -90,9 +90,18 @@ a {
 	width: 100%;
 }
 
+.board_header#sort {
+	margin: 0;
+	padding: 0;
+}
+
 .g_srch {
-	margin-top: -1.4em;
-	padding-bottom: 0.7em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: -20px;
+	padding: 0 16px 18px 16px;
+	box-sizing: border-box;
 }
 
 .board_select {
@@ -108,9 +117,9 @@ a {
 input[type='search'] {
 	border: 1px solid #ccc;
 	border-radius: 20px;
-	padding: 0.7em 1em 0.7em 2.1em;
+	padding: 6px 8px 6px 32px;
 	box-sizing: border-box;
-	width: 17em;
+	width: 60%;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -126,7 +135,6 @@ input[type='search'] {
 	border-radius: 20px;
 	background-color: #eee;
 	padding: 0.4em 0.8em;
-	margin: 0 0.3em 0 0.5em;
 }
 
 .sort_view:active {
@@ -139,7 +147,6 @@ input[type='search'] {
 	border-radius: 20px;
 	background-color: #e0e0e0;
 	padding: 0.4em 0.8em;
-	margin: 0 0.3em 0 0.5em;
 }
 
 .sort_newest:active {
@@ -1851,9 +1858,9 @@ select:focus {
 	input[type='search'] {
 		border: 1px solid #ccc;
 		border-radius: 20px;
-		padding: 0.7em 1em 0.7em 2em;
+		padding: 5px 5px 5px 32px;
 		box-sizing: border-box;
-		width: 10em;
+		width: 46%;
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		appearance: none;
@@ -1901,9 +1908,9 @@ select:focus {
 	input[type='search'] {
 		border: 1px solid #ccc;
 		border-radius: 20px;
-		padding: 0.6em 1em 0.6em 2em;
+		padding: 6px 5px 6px 32px;
 		box-sizing: border-box;
-		width: 12em;
+		width: 53%;
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		appearance: none;
@@ -1947,9 +1954,9 @@ select:focus {
 	input[type='search'] {
 		border: 1px solid #ccc;
 		border-radius: 20px;
-		padding: 0.6em 1em 0.6em 2em;
+		padding: 6px 7px 6px 30px;
 		box-sizing: border-box;
-		width: 14em;
+		width: 59%;
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		appearance: none;
@@ -1989,6 +1996,22 @@ select:focus {
 		margin-left: 50px;
 		width: fit-content !important;
 		font-size: 20px;
+	}
+
+	input[type='search'] {
+		border: 1px solid #ccc;
+		border-radius: 20px;
+		padding: 6px 7px 6px 32px;
+		box-sizing: border-box;
+		width: 64%;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		background-image: url(../img/ic_srch.png);
+		background-size: 1.5em;
+		background-repeat: no-repeat;
+		background-position: 0.5em center;
+		font-size: 14px;
 	}
 }
 
