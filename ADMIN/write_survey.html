@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="UTF-8">
+	<title>Administrator</title>
+	<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+
+	<link rel="stylesheet" href="assets/admin/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/admin/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/admin/css/admin.css">
+
+	<link rel="stylesheet" href="assets/admin/css/jquery-ui.css">
+
+
+	<!-- <link rel="stylesheet" href="https://uicdn.toast.com/tui-editor/latest/tui-editor.css"></link>
+<link rel="stylesheet" href="https://uicdn.toast.com/tui-editor/latest/tui-editor-contents.css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css"></link> -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	</link>
+
+</head>
+
+<body class="skin-violet">
+	<header class="header">
+
+		<a href="mainManager.tk" class="logo">
+			<img src="assets/admin/img/logo.png" style="width: 130px;">
+		</a>
+		<nav class="navbar navbar-static-top" role="navigation">
+			<a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<div class="navbar-right">
+				<ul class="nav navbar-nav">
+					<li class="dropdown user user-menu">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="glyphicon glyphicon-user"></i>
+							<span>master<i class="caret"></i></span>
+						</a>
+						<ul class="dropdown-menu">
+							<!-- User image -->
+							<li class="user-header">
+								<img src="assets/admin/img/ico_admin.png" class="img-circle" alt="User Image" />
+								<p>
+									master
+									<small>관리자</small>
+								</p>
+							</li>
+							<li class="user-footer">
+								<div class="pull-right">
+									<a href="pwdManager.tk" class="btn btn-default btn-flat">비밀번호변경</a>
+									<a href="loginManager.tk" class="btn btn-default btn-flat">로그아웃</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="wrapper row-offcanvas row-offcanvas-left">
+		<aside class="left-side sidebar-offcanvas">
+
+
+
+
+
+
+
+			<section class="sidebar">
+				<!-- Sidebar user panel -->
+
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="assets/admin/img/ico_admin.png" class="img-circle" alt="User Image" />
+					</div>
+					<div class="pull-left info">
+						<p>안녕하세요!<br><b>관리자</b>님</p>
+
+						<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+					</div>
+				</div>
+
+
+				<ul class="sidebar-menu">
+					<li class="">
+						<a href="mainManager.tk">
+							<i class="fa fa-home"></i> <span>Home</span>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="sidebar-menu">
+					<li class="treeview active">
+						<a href="#">
+							<i class="fa fa-user"></i>
+							<span>기본 관리</span>
+							<i class="fa fa-angle-down pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="adminManager.tk"><i class="fa fa-angle-double-right active"></i> 관리자관리</a></li>
+							<li><a href="mboardManager.tk"><i class="fa fa-angle-double-right active"></i> 게시판관리</a></li>
+						</ul>
+					</li>
+				</ul>
+
+
+				<ul class="sidebar-menu">
+					<li class="treeview ">
+						<a href="#">
+							<i class="fa fa-envelope-o"></i>
+							<span>제안 관리</span>
+							<i class="fa fa-angle-down pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+
+							<li><a href="committeeBoardManager.tk"><i class="fa fa-angle-double-right"></i> 정도경영위원회</a></li>
+
+							<li><a href="companyBoardManager.tk"><i class="fa fa-angle-double-right"></i> 계열사 담당조직</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="sidebar-menu">
+					<li class="treeview ">
+						<a href="#">
+							<i class="fa fa-wrench"></i>
+							<span>공통관리</span>
+							<i class="fa fa-angle-down pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="codeManager.tk"><i class="fa fa-angle-double-right"></i> 코드 관리</a></li>
+						</ul>
+					</li>
+				</ul>
+
+
+
+				<!-- 2019.08.13 -->
+
+				<ul class="sidebar-menu">
+					<li class="treeview ">
+						<a href="#">
+							<i class="fa fa-wrench"></i>
+							<span>PUSH관리</span>
+							<i class="fa fa-angle-down pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="pushManager.tk"><i class="fa fa-angle-double-right"></i> PUSH 메시지 작성</a></li>
+							<li><a href="pushHistManager.tk"><i class="fa fa-angle-double-right"></i> PUSH 발송 내역</a></li>
+						</ul>
+					</li>
+				</ul>
+
+
+
+
+
+
+
+				<ul class="sidebar-menu">
+					<li>
+						<a href="http://www.taekwanggroup.co.kr/homepage/board/taekwangPrecisionManagement.do" target="_blank">
+							<i class="fa fa-balance-scale"></i> <span>정도 경영</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- /.sidebar -->
+			<!-- /.sidebar -->
+		</aside>
+
+		<aside class="right-side">
+			<section class="content-header">
+				<h1>게시판상세</h1>
+				<ol class="breadcrumb">
+
+
+
+
+
+
+					<li><a href="mainManager.tk"><i class="fa fa-home"></i> Home</a></li>
+					<li class="active">기본관리</li>
+					<li class="active">게시판관리</li>
+					<li class="active">게시판상세</li>
+				</ol>
+			</section>
+
+			<!-- Main content -->
+
+			<section class="content">
+				<div class="tbl_view">
+					<form method="post" id="mainForm">
+						<h3 class="head_tit">글쓰기</h3>
+						<div class="table-responsive">
+							<input type="hidden" id="curPage" name="curPage" value='' /> <input type="hidden" id="MB_NO" name="MB_NO"
+								value='' />
+							<table class="table tbl_write">
+								<tbody>
+									<tr>
+										<th scope="row">제목</th>
+										<td>
+											<div class="form-inline">
+
+												<input type="text" class="form-control" name="title" id="title" maxlength="40">
+
+
+											</div>
+										</td>
+
+										<th scope="row">게시판 선택</th>
+										<td>
+											<div class="form-inline">
+												<div class="form-group">
+
+													<select class="form-control" id="CATE_CODE" name="CATE_CODE" style="width: 140px;">
+														<option value="" selected>전체</option>
+
+														<option value="41">제안 접수 현황</option>
+
+														<option value="42">이벤트</option>
+
+														<option value="43">우수 사례</option>
+
+														<option value="44">홍보 포스터</option>
+
+														<option value="45">위원회 활동</option>
+
+													</select>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<th scope="row">첨부</th>
+										<td>
+											<div class="form-inline">
+												<div class="form-group">
+													<div id="attachFileDiv">
+														<input style="display: inline" type="file" name=files value="" size="40"> <input
+															type="button" value="추가" onclick="attachFile.add()" style="margin-left: 5px">
+													</div>
+													<!-- <input type="file" name="sboardfile" id="sboardfile" accept=".zip"> -->
+												</div>
+											</div>
+										</td>
+
+										<th scope="row">중요글 체크<input type="checkbox" name="notice" id=notice value="Y" /></th>
+										<td>
+											<div class="form-inline">
+												<div class="form-group">
+													<input type="text" placeholder="시작일설정" name="date" id="date1" size="12" value="" readonly
+														disabled />
+													~
+													<input type="text" placeholder="만료일설정" name="date" id="date2" size="12" value="" readonly
+														disabled />
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											설문 개요
+										</th>
+										<td colspan="3">
+											<textarea id="textAreaContent" name="content" style="width: 100%;"></textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- /.table-responsive -->
+					</form>
+					<!-- <div id="editSection"></div> -->
+
+					<!-- add_survey -->
+					<div class="wrap_btn">
+						<button class="btn_add">+ 문항추가</button>
+					</div>
+					<div class="wrap_survey">
+
+						<div class="q_box">
+							<div class="selcet_type">
+								<div class="tit">유형 선택</div>
+								<select>
+									<option>단일 선택 가능</option>
+									<option>복수 선택 가능</option>
+									<option>서술형</option>
+								</select>
+							</div>
+							<div class="write_q">
+								<div class="tit">문항 입력</div>
+								<textarea></textarea>
+							</div>
+							<div class="add_choice">
+								<div class="tit">선택지 입력</div>
+								<div class="choice_list">
+									<button class="btn_add_choice">+ 선택지 추가</button>
+									<button class="btn_add_choice">+ 기타 선택지(참여자 입력) 추가</button>
+									<span class="tit_inline">* 최대 선택 갯수 :</span><input type="text" class="choice_num">
+									<div><input type="text"><button>x</button></div>
+									<div><input type="text"><button>x</button></div>
+									<div><input type="text" placeholder="기타 선택지(참여자 입력) 추가됨" readonly><button>x</button></div>
+								</div>
+							</div>
+							<div class="wrap_btn">
+								<button class="btn_del">x 문항삭제</button>
+							</div>
+						</div>
+					</div>
+					<div class="wrap_survey">
+						<div class="q_box">
+							<div class="selcet_type">
+								<div class="tit">유형 선택</div>
+								<select>
+									<option>단일 선택 가능</option>
+									<option>복수 선택 가능</option>
+									<option selected>서술형</option>
+								</select>
+							</div>
+							<div class="write_q">
+								<div class="tit">문항 입력</div>
+								<textarea></textarea>
+							</div>
+							<div class="wrap_btn">
+								<button class="btn_del">x 문항삭제</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="search_btn">
+
+						<button type="button" class="btn btn-default" id="btnSave">저장</button>
+
+
+
+						<button type="button" class="btn btn-default">미리보기</button>
+						<button type="button" class="btn btn-default">결과보기</button>
+
+					</div>
+
+				</div>
+				<!-- /.tbl_view -->
+
+			</section>
+			<!-- /.content -->
+
+		</aside>
+		<!-- /.right-side -->
+	</div>
+	<!-- ./wrapper -->
+	<!-- Scripts -->
+	<script src="assets/admin/js/jquery-1.11.3.min.js"></script>
+	<script src="assets/admin/js/jquery-ui-1.10.3.min.js"></script>
+	<script src="assets/admin/js/bootstrap.min.js"></script>
+	<script src="assets/admin/js/common.js"></script>
+
+	<script src="assets/admin/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="se2/js/HuskyEZCreator.js"></script>
+
+	<script type="text/javascript">
+		var oEditors = [];
+		$(function () {
+			nhn.husky.EZCreator.createInIFrame({
+				oAppRef: oEditors,
+				elPlaceHolder: "textAreaContent", //textarea ID
+				sSkinURI: "se2/SmartEditor2Skin.html",
+				fCreator: "createSEditorInFrame"
+			});
+
+			$("#btnCancel").on("click", function () {
+				movePage({
+					"curPage": $("#curPage").val()
+				}, "mboardManager.tk");
+			});
+
+			$("#btnSave, #btnUpdate").on("click", function () {
+
+				var update = false;
+
+				if ($(this).text() == '수정') {
+					update = true;
+				}
+
+				if (!checkItem(true)) {
+					return;
+				}
+
+				oEditors.getById["textAreaContent"].exec("UPDATE_CONTENTS_FIELD", []);
+
+				var formData = new FormData();
+				$('#mainForm input:file').each(
+					function (index) {
+						formData.append("files" + index, this.files[0]);
+					});
+				var cate_code = $("#CATE_CODE").val();
+				formData.append("TITLE", $("#title").val());
+				formData.append("CATE_CODE", cate_code);
+				formData.append("SDATE", $("#date1").val());
+				formData.append("EDATE", $("#date2").val());
+
+				formData.append("WRITER", '관리자');
+				formData.append("CONTENT", oEditors.getById["textAreaContent"].getContents());
+
+				if ($("input:checkbox[name='notice']").is(":checked") == true) {
+					formData.append("NOTICE", $("input:checkbox[name='notice']:checked").val());
+				} else {
+					formData.append("NOTICE", "N");
+				}
+
+				if (confirm($(this).text() + "하시겠습니까?")) {
+					if (update) {
+						formData.append("MB_NO", $("#MB_NO").val());
+						formData.append("FILENAME", $('#fname').text());
+						var url = 'updateMBoard.adm';
+					} else {
+						var url = 'insertMBoard.adm';
+					}
+
+					$.ajax({
+						type: "POST",
+						enctype: 'multipart/form-data',
+						url: url,
+						data: formData,
+						processData: false,
+						contentType: false,
+						cache: false,
+						timeout: 600000,
+						success: function (data) {
+							if (JSON.parse(data).result == 'SUCCESS') {
+
+								if (update) {
+									location.reload();
+								} else {
+									alert(JSON.parse(data).result_msg);
+									//movePage({},"mboardManager.tk");
+									movePage({}, "mboardManager.tk?cate_code=".concat(cate_code));
+								}
+
+							} else {
+								alert(JSON.parse(data).result_msg);
+								console.log(data);
+							}
+						},
+						error: function (request, status,
+							error) {
+							//alert(JSON.parse(data).result_msg);
+							alert("code:" + request.status +
+								"\n" + "message:" +
+								request.responseText +
+								"\n" + "error:" +
+								error);
+							console.log(data);
+						}
+					});
+				}
+
+			});
+
+		});
+
+		// textArea에 이미지 첨부
+		function pasteHTML(filepath) {
+			var sHTML = '<img src=/mboard/img/' + filepath + '>';
+			oEditors.getById["textAreaContent"].exec("PASTE_HTML", [sHTML]);
+		}
+
+		var checkItem = function (is_new) {
+
+			var fileCheck = document.getElementById("fileField");
+			if (fileCheck) {
+				if (!fileCheck.value) {
+					alert("파일을 첨부해 주세요");
+					return false;
+				}
+			}
+
+			if ($("#title").val() == "") {
+				alert("title 을 입력해주세요");
+				return false;
+			}
+
+			if ($("input:checkbox[name='notice']").is(":checked") == true) {
+				if ($("#date1, #date2").val() == "") {
+					alert("게시일 을  입력해주세요");
+					return false;
+				}
+			}
+			return true;
+		}
+
+		$("#date1, #date2").datepicker();
+
+		$("#notice").change(function () {
+			if ($("#notice").is(":checked")) {
+				$("#date1, #date2").attr('disabled', false);
+			} else {
+				$("#date1, #date2").attr('disabled', true);
+			}
+		});
+
+		attachFile = {
+			idx: 0,
+			add: function () { // 파일필드 추가
+				var o = this;
+				var idx = o.idx;
+
+				var div = document.createElement('div');
+				div.style.marginTop = '3px';
+				div.id = 'file' + o.idx;
+
+				var file = document.all ? document
+					.createElement('<input name="files">') : document
+					.createElement('input');
+				file.type = 'file';
+				file.name = 'files' + o.idx;;
+				file.size = '40';
+				file.id = 'fileField';
+				file.style = 'display:inline';
+
+				var btn = document.createElement('input');
+				btn.type = 'button';
+				btn.value = '삭제';
+				btn.onclick = function () {
+					o.del(idx)
+				}
+				btn.style.marginLeft = '5px';
+
+				div.appendChild(file);
+				div.appendChild(btn);
+				document.getElementById('attachFileDiv').appendChild(div);
+
+				o.idx++;
+			},
+			del: function (idx) { // 파일필드 삭제
+				if (document.getElementsByName('files' + idx).value != '' &&
+					!confirm('삭제 하시겠습니까?')) {
+					return;
+				}
+				document.getElementById('attachFileDiv').removeChild(
+					document.getElementById('file' + idx));
+			}
+		}
+
+		$("a[name=delfile]").on("click", function () {
+			var tempname = $(this).data("code");
+
+			if (confirm("삭제하시겠습니까?")) {
+				sendPost("deleteFile.adm", {
+					"TEMPNAME": tempname,
+					"MB_NO": $("#MB_NO").val()
+				}, function (data) {
+					if (data.result == 'SUCCESS') {
+						location.reload();
+					} else {
+						alert(data.result_msg);
+						console.log(data);
+					}
+				}, function (data) {
+					alert(err);
+				});
+			}
+		});
+	</script>
+</body>
+
+</html>
