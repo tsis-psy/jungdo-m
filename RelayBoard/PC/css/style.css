@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: 'Malgun Gothic', 'Sans-serif';
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'GmarketSans';
+	font-weight: 200;
+	src: url('../../font/GmarketSansBold.woff') format('woff');
+}
+@font-face {
+	font-family: 'GmarketSans';
+	font-weight: 100;
+	src: url('../../font/GmarketSansMedium.woff') format('woff');
+}
+@font-face {
+	font-family: 'tvn_enjoystorieslight';
+	font-weight: normal;
+	src: url('../../font/tvn__light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'tvn_enjoystorieslight';
+	font-weight: normal;
+	src: url('../../font/tvn__light.eot') format('eot');
+}
+
+.wrap {
+	width: 100%;
+}
+.wrap-header {
+	width: 100%;
+	background-color: #b4985a;
+}
+.header {
+	width: 1280px;
+	padding: 20px;
+	color: #fff;
+	text-align: right;
+	margin: 0 auto;
+}
+.header .user {
+	background-image: url(../../img/ic-user.png);
+	background-repeat: no-repeat;
+	background-size: 16px;
+	padding: 0 15px 0 20px;
+}
+
+.header .status {
+	font-weight: bold;
+}
+
+.wrap-content {
+	width: 100%;
+}
+.wrap-tit {
+	width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 88px 0;
+}
+.wrap-tit .tit {
+	font-size: 72px;
+	color: #b4985a;
+	font-family: 'GmarketSansBold';
+}
+.wrap-tit .subtit {
+	font-size: 60px;
+	font-family: 'tvn_enjoystorieslight';
+}
+
+.wrap-list {
+	width: 1280px;
+	margin: 0 auto;
+}
