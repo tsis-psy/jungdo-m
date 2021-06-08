@@ -38,7 +38,7 @@
 	background-color: #b4985a;
 }
 .header {
-	width: 1280px;
+	width: 1112px;
 	padding: 20px;
 	color: #fff;
 	text-align: right;
@@ -59,7 +59,7 @@
 	width: 100%;
 }
 .wrap-tit {
-	width: 1280px;
+	width: 1112px;
 	margin: 0 auto;
 	text-align: center;
 	padding: 88px 0;
@@ -75,6 +75,19 @@
 }
 
 .wrap-list {
-	width: 1280px;
+	width: 1112px;
 	margin: 0 auto;
+}
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+	align-content: space-between;
+	height: 1112px;
+}
+.listbox {
+	width: 360px;
+	height: 360px;
+	border: 1px solid #c4c4c4;
 }
