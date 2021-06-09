@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
 		<title>태광그룹 행동약속 캠페인</title>
 	</head>
 	<body>
@@ -11,32 +12,35 @@
 			<button>로그인</button>
 		</div>
 		<!-- 로그인모달 -->
-		<div class="wrap-login" style="display: none">
-			<div class="pop-header">
-				<span>로그인</span>
-				<span>닫기</span>
-			</div>
-			<div class="pop-content">
-				<form>
-					<select>
-						<option>계열사 선택</option>
-						<option>태광산업</option>
-						<option>대한화섬</option>
-						<option>흥국생명</option>
-						<option>흥국화재</option>
-						<option>흥국증권</option>
-						<option>흥국자산운용</option>
-						<option>고려저축은행</option>
-						<option>예가람저축은행</option>
-						<option>티캐스트</option>
-						<option>한국케이블텔레콤</option>
-						<option>티시스</option>
-						<option>티알엔</option>
-					</select>
-					<input type="text" placeholder="사번 입력" />
-					<input type="password" placeholder="비밀번호 입력" />
-					<button>로그인</button>
-				</form>
+		<div class="wrap_layerpop">
+			<div class="wrap-login">
+				<div class="pop-header">
+					<span>로그인</span>
+					<span class="pop-close"><img src="../img/ic_close.svg" alt="닫기" /></span>
+				</div>
+				<div class="pop-content">
+					<p>원활한 서비스 이용을 위해 로그인이 필요합니다.<br />(통합인사정보시스템 계정 사용)</p>
+					<form>
+						<select>
+							<option>계열사 선택</option>
+							<option>태광산업</option>
+							<option>대한화섬</option>
+							<option>흥국생명</option>
+							<option>흥국화재</option>
+							<option>흥국증권</option>
+							<option>흥국자산운용</option>
+							<option>고려저축은행</option>
+							<option>예가람저축은행</option>
+							<option>티캐스트</option>
+							<option>한국케이블텔레콤</option>
+							<option>티시스</option>
+							<option>티알엔</option>
+						</select>
+						<input type="text" placeholder="사번 입력" />
+						<input type="password" placeholder="비밀번호 입력" />
+						<button>로그인</button>
+					</form>
+				</div>
 			</div>
 		</div>
 		<!-- //로그인모달 -->
