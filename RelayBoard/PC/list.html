@@ -35,7 +35,7 @@
 						<option>티시스</option>
 						<option>티알엔</option>
 					</select>
-					<button>글쓰기</button>
+					<button class="open">글쓰기</button>
 					<div class="list">
 						<div class="listbox">
 							<div class="writer">
@@ -171,7 +171,7 @@
 			</div>
 		</div>
 		<!-- 글쓰기모달 -->
-		<div class="wrap_layerpop" style="display: none">
+		<div class="wrap-layerpop hidden">
 			<div class="wrap-write">
 				<div class="pop-header">
 					<span>글쓰기</span>
@@ -188,5 +188,23 @@
 			</div>
 		</div>
 		<!-- //글쓰기모달 -->
+
+		<script type="text/javascript">
+			//모달오픈
+			const openButton = document.querySelector('.open');
+			const modal = document.querySelector('.wrap-layerpop');
+			const closeButton = modal.querySelector('.pop-close');
+
+			const openModal = () => {
+				modal.classList.remove('hidden');
+			};
+			const closeModal = () => {
+				modal.classList.add('hidden');
+			};
+
+			openButton.addEventListener('click', openModal);
+			closeButton.addEventListener('click', closeModal);
+			//
+		</script>
 	</body>
 </html>

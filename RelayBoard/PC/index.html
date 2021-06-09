@@ -9,10 +9,14 @@
 	</head>
 	<body>
 		<div class="wrap">
-			<button>로그인</button>
+			<div class="wrap-tit">
+				<div class="tit">태광그룹 행동약속 캠페인</div>
+				<div class="subtit">여러분의 약속을 응원합니다!</div>
+				<button class="normal open">로그인</button>
+			</div>
 		</div>
 		<!-- 로그인모달 -->
-		<div class="wrap_layerpop">
+		<div class="wrap-layerpop hidden">
 			<div class="wrap-login">
 				<div class="pop-header">
 					<span>로그인</span>
@@ -44,5 +48,23 @@
 			</div>
 		</div>
 		<!-- //로그인모달 -->
+
+		<script type="text/javascript">
+			//모달오픈
+			const openButton = document.querySelector('.open');
+			const modal = document.querySelector('.wrap-layerpop');
+			const closeButton = modal.querySelector('.pop-close');
+
+			const openModal = () => {
+				modal.classList.remove('hidden');
+			};
+			const closeModal = () => {
+				modal.classList.add('hidden');
+			};
+
+			openButton.addEventListener('click', openModal);
+			closeButton.addEventListener('click', closeModal);
+			//
+		</script>
 	</body>
 </html>

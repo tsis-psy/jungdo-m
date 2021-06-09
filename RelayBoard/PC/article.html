@@ -34,7 +34,7 @@
 								<span class="like">15</span>
 								<span class="num-reply">10</span>
 							</div>
-							<button>수정</button>
+							<button class="open">수정</button>
 						</div>
 					</div>
 
@@ -136,7 +136,7 @@
 			</div>
 		</div>
 		<!-- 글수정모달 -->
-		<div class="wrap_layerpop" style="display: none">
+		<div class="wrap-layerpop hidden">
 			<div class="wrap-write">
 				<div class="pop-header">
 					<span>글쓰기</span>
@@ -153,5 +153,23 @@
 			</div>
 		</div>
 		<!-- //글수정모달 -->
+
+		<script type="text/javascript">
+			//모달오픈
+			const openButton = document.querySelector('.open');
+			const modal = document.querySelector('.wrap-layerpop');
+			const closeButton = modal.querySelector('.pop-close');
+
+			const openModal = () => {
+				modal.classList.remove('hidden');
+			};
+			const closeModal = () => {
+				modal.classList.add('hidden');
+			};
+
+			openButton.addEventListener('click', openModal);
+			closeButton.addEventListener('click', closeModal);
+			//
+		</script>
 	</body>
 </html>
