@@ -392,7 +392,7 @@ button.normal {
 	padding: 24px;
 }
 .pop-content p {
-	text-align: center;
+	text-align: left;
 	padding-bottom: 20px;
 	line-height: 150%;
 }
