@@ -72,9 +72,27 @@ button.normal {
 .wrap {
 	width: 100%;
 }
+.poster {
+	background-color: #e7f4ee;
+}
+.poster img {
+	width: 100%;
+}
 .wrap-header {
 	width: 100%;
 	background-color: #b4985a;
+}
+.wrap-btn {
+	width: 100%;
+	background-color: #e7f4ee;
+	text-align: center;
+	padding: 80px 0 150px;
+}
+.wrap-btn button {
+	font-size: 20px;
+	width: 300px;
+	height: 56px;
+	background-color: #000;
 }
 .header {
 	width: 1112px;
