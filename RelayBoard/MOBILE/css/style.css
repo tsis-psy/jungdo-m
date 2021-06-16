@@ -171,10 +171,19 @@ button.normal {
 
 .list {
 	width: 100%;
+	min-height: 70vh;
 	height: 100%;
 	padding: 10px;
 	background-color: #f0f0f0;
 }
+.nothing {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding-top: 20vh;
+	color: #666;
+}
+
 .listbox {
 	width: 100%;
 	background-color: #fff;
@@ -293,6 +302,17 @@ button.normal {
 	align-items: flex-start;
 }
 
+.btn-list {
+	text-align: right;
+	padding: 10px 0 6px 0;
+}
+
+.btn-list button {
+	border: 0;
+	background-color: transparent;
+	color: #999;
+	padding: 5px;
+}
 /* 댓글 */
 .write-reply {
 	border-top: 1px solid #e0e0e0;
