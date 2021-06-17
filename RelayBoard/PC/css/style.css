@@ -28,7 +28,10 @@
 	font-weight: 100;
 	src: url('../../font/NanumMyeongjo.woff') format('woff');
 }
-
+html,
+body {
+	height: 100%;
+}
 textarea {
 	overflow: auto;
 	outline: none;
@@ -72,12 +75,41 @@ button.normal {
 .wrap {
 	width: 100%;
 }
-.poster {
-	background-color: #e7f4ee;
+.wrap-index {
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
 }
-.poster img {
+.wrap-footer {
+	padding: 3vh 0 5vh 0;
+	text-align: center;
+	color: #ccc;
+	font-size: 11px;
+}
+.poster-header {
+	background-color: #000;
+}
+
+.poster-body {
+	position: relative;
+	text-align: center;
+}
+.poster-body button {
+	border: 0;
+	background-color: transparent;
+	position: absolute;
+	top: 9%;
+	left: 33%;
+	width: 36%;
+}
+.poster-body button img {
 	width: 100%;
 }
+.poster-header img,
+.poster-body img {
+	width: 100%;
+}
+
 .wrap-header {
 	width: 100%;
 	background-color: #b4985a;
