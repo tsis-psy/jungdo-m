@@ -82,13 +82,37 @@ button.normal {
 .wrap {
 	width: 100%;
 }
-.poster {
-	background-color: #e7f4ee;
+.poster-header {
+	background-color: #251e1c;
 }
-.poster img {
+.poster-body {
+	background-color: #eef1fe;
+	text-align: center;
+	padding-top: 3vh;
+	height: fit-content;
+}
+.poster-body button {
+	border: 0;
+	background-color: transparent;
+	width: 80vw;
+	margin-left: 6vw;
+}
+.poster-body button img {
 	width: 100%;
 }
-
+.poster-header img,
+.poster-body img {
+	width: 100%;
+	display: block;
+}
+.wrap-footer {
+	text-align: center;
+	color: #999;
+	padding: 3vh 0;
+}
+.wrap-footer p {
+	font-size: 12px;
+}
 .wrap-btn {
 	width: 100%;
 	height: 25vh;
