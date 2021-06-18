@@ -192,8 +192,8 @@ button.normal {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
-	justify-content: space-between;
-	align-content: space-between;
+	justify-content: flex-start;
+	align-content: flex-start;
 	height: 1112px;
 	margin-top: 20px;
 }
@@ -211,6 +211,12 @@ button.normal {
 	border: 1px solid #c4c4c4;
 	padding: 26px;
 	position: relative;
+	margin: 0px 16px 16px 0;
+}
+.listbox:nth-child(3),
+.listbox:nth-child(6),
+.listbox:nth-child(9) {
+	margin-right: 0;
 }
 .listbox .writer {
 	margin-bottom: 35px;
