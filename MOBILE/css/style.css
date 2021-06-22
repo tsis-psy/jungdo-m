@@ -1820,6 +1820,15 @@ select:focus {
 	cursor: pointer;
 }
 
+/* 배너추가 */
+.banner {
+	width: 100%;
+	padding: 10px 0;
+}
+.banner img {
+	width: 80%;
+}
+
 /* 미디어쿼리추가 2019.08.23 */
 @media only screen and (max-width: 319px), screen and (max-height: 320px) and (orientation: landscape) {
 	.subtit_tsis > .hello {
