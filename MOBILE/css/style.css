@@ -1426,6 +1426,16 @@ select:focus {
 	padding-right: 12px;
 }
 
+.wrap_article {
+	width: 100%;
+	padding: 40px 20px;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+.wrap_article img {
+	width: 100%;
+}
 .wrap_chart {
 	padding: 20px 0;
 	background-color: #f4f4f4;
