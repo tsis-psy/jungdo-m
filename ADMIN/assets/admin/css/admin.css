@@ -1529,3 +1529,21 @@ button.close_reply {
 	height: 25px;
 	line-height: 100%;
 }
+
+.wrap_info {
+	padding: 5px 0;
+}
+
+.wrap_info .name {
+	font-weight: bold;
+}
+
+.wrap_info span::after {
+	content: '|';
+	padding: 0 5px;
+	font-size: 12px;
+	color: #ccc;
+}
+.wrap_info span:last-child:after {
+	content: '';
+}
